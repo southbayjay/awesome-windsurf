@@ -11,9 +11,10 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 > Our goal is to complement, not duplicate, the official documentation. We focus on community-contributed resources, tips, and solutions that enhance the Windsurf experience. For official features and usage documentation, please refer to the [Codeium Documentation](https://docs.codeium.com/getstarted/overview).
 
 ## Contents
-- [Official Resources](#official-resources)
-- [Service Status](#service-status)
 - [Getting Started](#getting-started)
+- [Official Resources](#official-resources)
+- [Please Read The Docs](#please-read-the-docs)
+- [Custom Prompts](#custom-prompts)
 - [FAQ](#faq)
 - [Known Issues & Solutions](#known-issues--solutions)
 - [Tips and Tricks](#tips-and-tricks)
@@ -22,24 +23,25 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 - [Community](#community)
 - [Contributing](#contributing)
 
+## Getting Started
+### Installation
+For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
+
 ## Official Resources
 - [Windsurf Discord](https://discord.com/invite/3XFf78nAx5) - Join the Windsurf community on Discord
 - [Windsurf Website](https://www.codeium.com/windsurf) - Official website and download
 - [Codeium Documentation](https://docs.codeium.com/windsurf/getting-started) - Official documentation
 - [Changelog](https://codeium.com/changelog) - Stay updated with the latest Windsurf features and improvements
 
-## Service Status
-Monitor AI service health directly:
-- [Anthropic Status](https://status.anthropic.com) - Claude API availability and incidents
-- [OpenAI Status](https://status.openai.com) - GPT-4 and other OpenAI services status
-
 ## Please Read The Docs Before Asking For Help
 
 We are trying to build a community around Windsurf that is self-sufficient and supportive. Before asking for help in Discord or emailing Codeium support, please take a few minutes to read the [Codeium documentation](https://docs.codeium.com/getstarted/overview) linked above.
 
-## Getting Started
-### Installation
-For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
+## Custom Prompts
+
+Check out our [prompts directory](prompts/) for a collection of community-contributed prompts and guidelines, including:
+
+- [Global Rules](prompts/global-rules.md) - A comprehensive set of coding guidelines by computerK
 
 ## FAQ
 
@@ -80,6 +82,9 @@ This is a work in progress...
 
 ## Troubleshooting
 *Coming soon - We will collect common issues and solutions here*
+
+## Community
+- [Windsurf Discord](https://discord.com/invite/3XFf78nAx5) - Join the Windsurf community on Discord
 
 ## Contributing
 We welcome contributions! If you have suggestions, tips, or resources to add:
