@@ -18,7 +18,6 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Known Issues & Solutions](#known-issues--solutions)
 - [Tips and Tricks](#tips-and-tricks)
 - [Themes](#themes)
-- [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -43,6 +42,8 @@ Want to contribute? Create a directory with your username and add your prompts! 
 
 ## Known Issues & Solutions
 
+> **TODO**: Add link to issue #1 about the first known issue.
+
 | Issue | Description | Solution |
 |-------|-------------|----------|
 | Special Characters | Chat messages with special characters may cause test failures | Use custom Jest reporter that handles special characters:<br>1. Install reporter package<br>2. Configure Jest to use it<br>3. Run tests with --reporters flag |
@@ -63,12 +64,6 @@ Have a feature idea for Windsurf? Please submit it on the official feature reque
 ### Default Themes
 
 Coming soon - Share your favorite themes with the community!
-
-## Troubleshooting
-
-### Common Issues
-
-Coming soon - We will collect common issues and their solutions here.
 
 ## Contributing
 

@@ -1,11 +1,16 @@
 {
+  "version": "2024.12.2",
   "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "auto-changelog": "^2.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
     "markdownlint-cli2": "^0.16.0"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install && npx commitlint --init",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "lint-staged": {
     "*.md": "markdownlint-cli2"
