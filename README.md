@@ -35,8 +35,16 @@ We are trying to build a community around Windsurf that is self-sufficient and s
 ### Installation
 For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
 
-Currently known package manager support:
-- macOS: `brew install windsurf`
+### Package managers
+
+#### macOS: 
+`brew install windsurf`
+
+#### Linux: 
+forthcoming
+
+#### Windows: 
+forthcoming
 
 ## FAQ
 
@@ -52,9 +60,8 @@ This is a work in progress...
 | Issue | Description | Solution |
 |-------|-------------|----------|
 | Special Characters in Chat | Special characters (like ANSI escape codes) can break the chat interface | Use this [custom Jest reporter](https://gist.github.com/BryceEWatson/79ce7138bb4edb0a5ab6104cf1f6f72a) to clean and format test output for chat compatibility |
-| AI Model Availability | Sometimes certain AI models might be temporarily unavailable | Switch to Cascade Base as a somewhat reliable fallback option |
 | Chat Response Issues | Chat might become unresponsive or timeout | 1. Start a new chat session<br>2. Switch to Cascade Base<br>3. If problems persist, restart Windsurf and hope for the best|
-| Windsurf Rules Files | Rules don't appear to be honored | 1. Ensure your rules files are not more than 6k chars<br>2. Do not put any references to files in the rules files that would total more than 6k combined |
+| Windsurf Rules Files | Rules don't appear to be honored | 1. Ensure your rules files are not more than 6k chars<br>2. Do not put any references to files in the rules files that would total more than 6k combined<br>3. See [Cascade Documentation](https://docs.codeium.com/windsurf/cascade#memories) for more details on rules |
 | Allowed Commands | Commands in your allow list still prompt to be accepted | 1. This currently seems to be related to rules files bloating<br>2. See solutions for rules files above |
 | Credit System & Downtime | Credits may be consumed during service interruptions or failed flows | Currently no built-in way to track or reimburse lost credits. Consider:<br>1. Document failed flows with timestamps<br>2. Contact support for significant issues<br>3. Request status page or real-time service health indicators |
 
