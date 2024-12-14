@@ -5,7 +5,7 @@
     "markdownlint-cli2": "^0.16.0"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "fix:md": "markdownlint-cli2 --fix \"**/*.md\" \"#node_modules\""
   },
