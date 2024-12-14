@@ -72,6 +72,18 @@ We are trying to build a community around Windsurf that is self-sufficient and s
     1. Start a new chat session
     2. Switch to Cascade Base
     3. If problems persist, restart Windsurf
+   
+- **Windsurf rules files**
+  - Issue: Rules don't appear to be honoured
+  - Solution: 
+    1. Ensure your rules files are not more than 6k chars
+    2. Do not put any references to files in the rules files that would total more than 6k combined
+
+- **Allowed commands not being honoured**
+  - Issue: Commands in your allow list still prompt to be accepted
+  - Solution: 
+    1. This currently seems to be related to rules files bloating
+    2. See solutions for rules files above
 
 ### Best Practices
 - Keep chat prompts clear and free of special characters
