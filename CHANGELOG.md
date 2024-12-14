@@ -21,6 +21,10 @@ This project uses Calendar Versioning (YYYY.MM.MINOR).
 - Enhanced Git workflow documentation
 - Updated development tooling configuration
 
+### Fixed
+
+- Fixed GitHub Actions badge in README.md
+
 ## [2024.12.2] - 2024-12-14
 
 ### Changed
