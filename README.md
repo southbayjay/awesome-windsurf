@@ -1,5 +1,7 @@
 # Awesome Windsurf
 
+![alt text](windsurf_logo_wordmark.png)
+
 A curated list of awesome resources for working with the Windsurf code editor. Windsurf is a new AI-powered code editor that brings agentic AI assistance to your development workflow.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
