@@ -24,7 +24,7 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 ## Official Resources
 - [Windsurf Discord](https://discord.com/invite/3XFf78nAx5) - Join the Windsurf community on Discord
 - [Windsurf Website](https://www.codeium.com/windsurf) - Official website and download
-- [Codeium Documentation](https://docs.codeium.com/getstarted/overview) - Official documentation
+- [Codeium Documentation](https://docs.codeium.com/windsurf/getting-started) - Official documentation
 - [Changelog](https://codeium.com/changelog) - Stay updated with the latest Windsurf features and improvements
 
 ## Please Read The Docs Before Asking For Help
@@ -47,7 +47,7 @@ This is a work in progress...
 
 > For official documentation on common issues, please visit the [Codeium Common Issues Guide](https://docs.codeium.com/troubleshooting/common-issues)
 
-### Common Issues
+### Common issues from the community
 
 | Issue | Description | Solution |
 |-------|-------------|----------|
