@@ -1,4 +1,5 @@
 # [![Windsurf Logo](windsurf_logo_wordmark.png)](https://www.codeium.com/windsurf)
+
 [![Join us on Discord](https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB)](https://discord.gg/3XFf78nAx5)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-58E5BB.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882)](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors)
@@ -18,7 +19,7 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Tips and Tricks](#tips-and-tricks)
 - [Themes](#themes)
 - [Troubleshooting](#troubleshooting)
-- [Community](#community)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Please Read

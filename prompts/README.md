@@ -4,7 +4,7 @@ This directory contains community-contributed prompts for enhancing Windsurf. Ea
 
 ## Directory Structure
 
-```
+```text
 prompts/
 ├── computerk/
 │   └── global-rules.md

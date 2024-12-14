@@ -16,7 +16,7 @@ Thank you for your interest in contributing to Awesome Windsurf! This document p
 
 All prompts are organized by contributor in the `prompts/` directory:
 
-```
+```text
 prompts/
 ├── username1/
 │   ├── prompt1.md
@@ -29,7 +29,8 @@ prompts/
 ### Steps to Add Your Prompts
 
 1. Create a directory with your username in the `prompts/` directory
-   ```bash
+
+   ```shell
    mkdir prompts/yourusername
    ```
 
@@ -43,7 +44,7 @@ prompts/
 
 1. **Format**: Write prompts in Markdown format
 2. **Size**: Keep individual prompts under 6k characters (Windsurf limitation)
-3. **Content**: 
+3. **Content**:
    - Make prompts specific and focused
    - Include examples where helpful
    - Document any assumptions or requirements
@@ -53,9 +54,11 @@ prompts/
 
 1. Fork the repository
 2. Create a new branch for your feature
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
+
 3. Make your changes
 4. Update CHANGELOG.md following the existing format
 5. Commit your changes with clear commit messages
@@ -64,6 +67,7 @@ prompts/
 ## Need Help?
 
 If you have questions or need help with your contribution:
+
 1. Check existing issues and pull requests
 2. Join the [Windsurf Discord](https://discord.com/invite/3XFf78nAx5)
 3. Open a new issue for discussion
