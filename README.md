@@ -6,6 +6,7 @@
 [![Maintained](https://img.shields.io/badge/Maintained-yes-58E5BB.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
 [![Last Commit](https://img.shields.io/github/last-commit/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf)
+[![GitHub Actions Status](https://github.com/ichoosetoaccept/awesome-windsurf/workflows/CI/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-E55882.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![GitHub stars](https://img.shields.io/github/stars/ichoosetoaccept/awesome-windsurf?style=social)](https://github.com/ichoosetoaccept/awesome-windsurf/stargazers)
 

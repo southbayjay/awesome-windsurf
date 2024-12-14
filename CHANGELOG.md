@@ -12,6 +12,7 @@ This project uses Calendar Versioning (YYYY.MM.MINOR).
 - Automatic changelog generation using auto-changelog
 - GitHub workflow to update changelog on PR merges
 - Switched to Calendar Versioning
+- Added GitHub Actions status badge to README.md
 
 ## [2024.12.2] - 2024-12-14
 
