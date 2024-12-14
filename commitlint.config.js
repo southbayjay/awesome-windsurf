@@ -1,28 +1,34 @@
+/**
+ * Commitlint configuration for documentation repository
+ * 
+ * Commit Message Format:
+ * <type>: <description>
+ * 
+ * Types:
+ * - add: Add new documentation
+ * - update: Update existing documentation
+ * - remove: Remove documentation
+ * - fix: Fix typos, formatting, or broken links
+ * - meta: Changes to the repository itself (CI, scripts, etc)
+ * 
+ * Examples:
+ * - add: create guide for windsurf setup
+ * - update: improve clarity of installation steps
+ * - remove: outdated tutorial section
+ * - fix: correct typos in README
+ * - meta: update markdown linting rules
+ */
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
   rules: {
     'type-enum': [
       2,
       'always',
-      [
-        'feat',    // New feature
-        'fix',     // Bug fix
-        'docs',    // Documentation only changes
-        'style',   // Changes that do not affect the meaning of the code
-        'refactor',// A code change that neither fixes a bug nor adds a feature
-        'perf',    // A code change that improves performance
-        'test',    // Adding missing tests or correcting existing tests
-        'build',   // Changes that affect the build system or external dependencies
-        'ci',      // Changes to our CI configuration files and scripts
-        'chore',   // Other changes that don't modify src or test files
-        'revert',  // Reverts a previous commit
-      ],
+      ['add', 'update', 'remove', 'fix', 'meta']
     ],
-    'type-case': [2, 'always', 'lower'],
+    'type-case': [2, 'always', 'lowerCase'],
     'type-empty': [2, 'never'],
-    'scope-case': [2, 'always', 'lower'],
     'subject-empty': [2, 'never'],
-    'subject-full-stop': [2, 'never', '.'],
-    'header-max-length': [2, 'always', 72],
-  },
-};
+    'subject-case': [2, 'always', 'lowerCase'],
+    'subject-full-stop': [2, 'never', '.']
+  }
+}
