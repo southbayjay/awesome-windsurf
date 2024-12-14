@@ -15,9 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Platform-specific installation instructions for all major OS
 
 ### Changed
-- Reverted issues format from table to bullet points for better detail
+- Converted common issues to table format for better readability
 - Maintained professional tone in Discord link description
-- Simplified changelog link formatting
 - Improved documentation organization and readability
 
 ## [0.1.0] - 2024-12-14
