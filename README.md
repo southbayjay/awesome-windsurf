@@ -8,6 +8,8 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 
 **This is not an official Codeium or Windsurf resource, but rather a community-driven endeavor**
 
+> Our goal is to complement, not duplicate, the official documentation. We focus on community-contributed resources, tips, and solutions that enhance the Windsurf experience. For official features and usage documentation, please refer to the [Codeium Documentation](https://docs.codeium.com/getstarted/overview).
+
 ## Contents
 - [Official Resources](#official-resources)
 - [Getting Started](#getting-started)

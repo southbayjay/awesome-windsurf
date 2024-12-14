@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added direct link to Codeium documentation in the "Please Read" section
 - Added OS-specific installation sections with macOS instructions and placeholders for Linux and Windows
 - Added link to custom Jest reporter for handling special characters in chat
+- Added clarification about project's community focus and relationship to official documentation
 
 ### Changed
 - Improved documentation clarity by making documentation links more accessible
