@@ -12,6 +12,7 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 
 ## Contents
 - [Official Resources](#official-resources)
+- [Service Status](#service-status)
 - [Getting Started](#getting-started)
 - [FAQ](#faq)
 - [Known Issues & Solutions](#known-issues--solutions)
@@ -27,6 +28,11 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 - [Codeium Documentation](https://docs.codeium.com/windsurf/getting-started) - Official documentation
 - [Changelog](https://codeium.com/changelog) - Stay updated with the latest Windsurf features and improvements
 
+## Service Status
+Monitor AI service health directly:
+- [Anthropic Status](https://status.anthropic.com) - Claude API availability and incidents
+- [OpenAI Status](https://status.openai.com) - GPT-4 and other OpenAI services status
+
 ## Please Read The Docs Before Asking For Help
 
 We are trying to build a community around Windsurf that is self-sufficient and supportive. Before asking for help in Discord or emailing Codeium support, please take a few minutes to read the [Codeium documentation](https://docs.codeium.com/getstarted/overview) linked above.
@@ -34,17 +40,6 @@ We are trying to build a community around Windsurf that is self-sufficient and s
 ## Getting Started
 ### Installation
 For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
-
-### Package managers
-
-#### macOS: 
-`brew install windsurf`
-
-#### Linux: 
-forthcoming
-
-#### Windows: 
-forthcoming
 
 ## FAQ
 
@@ -68,7 +63,7 @@ This is a work in progress...
 ### Community Wishlist
 | Feature Request | Description | Status |
 |----------------|-------------|---------|
-| Service Status Page | Real-time indicators of API and service health | ❌ Not Implemented |
+| Service Status Page | Real-time indicators of API and service health | ✅ Available via Provider Status Pages |
 | Credit Usage Analytics | Detailed tracking of credit consumption and errors | ❌ Not Implemented |
 | Credit Reimbursement System | Automated system for handling credits lost to service issues | ❌ Not Implemented |
 | Flow Health Check | Pre-flight check of service health before starting flows | ❌ Not Implemented |
@@ -77,7 +72,8 @@ This is a work in progress...
 > Legend: ✅ Implemented | 🚧 In Progress | ❌ Not Implemented
 
 ## Tips and Tricks
-*Coming soon - Share your favorite Windsurf tips here for maximum effectiveness with this awesome editor*
+- Check the status pages mentioned above before debugging local issues
+- Bookmark both pages for quick access during incidents
 
 ## Themes
 *Coming soon - Share your favorite Windsurf themes here*
