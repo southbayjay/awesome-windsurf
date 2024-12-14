@@ -4,6 +4,14 @@ All notable changes to the awesome-windsurf repository will be documented in thi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.7] - 2024-12-14
+
+### Changed
+
+- Updated husky pre-commit hook:
+  - Removed deprecated husky initialization lines
+  - Reordered hooks to run lint-staged before CHANGELOG check
+  - Maintained CHANGELOG.md update enforcement
 
 ## [0.2.6] - 2024-12-14
 
@@ -15,7 +23,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Added repository guidelines for CHANGELOG updates and content standards
 - Created new content directory structure for better organization
 - Moved custom prompts to dedicated files in content/prompts
-
 
 ## [0.2.5] - 2024-12-14
 
@@ -30,20 +37,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Improved markdown formatting and consistency
 - Simplified installation instructions
 
-
 ## [0.2.4] - 2024-12-14
 
 ### Added
 
 - Added link to official Cascade documentation in Rules Files section
 
-
 ## [0.2.3] - 2024-12-14
 
 ### Added
 
 - Added markdownlint configuration and GitHub Actions workflow for markdown linting
-
 
 ## [0.2.2] - 2024-12-14
 
@@ -56,7 +60,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Changed
 
 - Restructured README.md to reference content in dedicated directories
-
 
 ## [0.2.1] - 2024-12-14
 
@@ -80,7 +83,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Made issue descriptions more realistic and community-driven
 - Converted community wishlist to table format with status indicators
 
-
 ## [0.2.0] - 2024-12-14
 
 ### Added
@@ -103,7 +105,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Reorganized sections for better readability
 - Added disclaimer about community-driven nature
 
-
 ## [0.1.0] - 2024-12-14
 
 ### Added
@@ -125,6 +126,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 - Reorganized sections for better readability
 - Added disclaimer about community-driven nature
-
 
 For official Windsurf updates, please visit the [Codeium Changelog](https://codeium.com/changelog)
