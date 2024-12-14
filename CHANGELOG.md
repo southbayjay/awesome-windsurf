@@ -20,6 +20,7 @@ This project uses Calendar Versioning (YYYY.MM.MINOR).
 - Added contributing guidelines for repository maintenance
 - Enhanced Git workflow documentation
 - Updated development tooling configuration
+- Restored Videos section to README.md with Windsurf IDE tutorial video
 
 ### Fixed
 

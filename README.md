@@ -1,7 +1,8 @@
 # [![Windsurf Logo](windsurf_logo_wordmark.png)](https://www.codeium.com/windsurf)
 
 [![Join us on Discord](https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB)](https://discord.gg/3XFf78nAx5)
-[![GitHub Actions](https://github.com/ichoosetoaccept/awesome-windsurf/workflows/CI/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
+[![GitHub Actions](https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
+[![Changelog](https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/changelog.yml/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-58E5BB.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882)](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-58E5BB.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
@@ -16,19 +17,21 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 - [Please Read](#please-read)
 - [Community Prompts](#community-prompts)
-- [Known Issues & Solutions](#known-issues--solutions)
+- [Known Issues](#known-issues)
 - [Tips and Tricks](#tips-and-tricks)
 - [Themes](#themes)
+- [Videos](#videos)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Please Read
 
-This is not an official Codeium repository. For official documentation and support, please visit:
+**This is not an official Codeium repository.** For official documentation and support, please visit:
 
-- [Codeium Documentation](https://codeium.com/documentation)
+- [Windsurf Documentation](https://docs.codeium.com/windsurf/getting-started)
+- [Codeium Support](https://codeium.com/support)
+- [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
 - [Codeium Changelog](https://codeium.com/changelog)
-- [Join Codeium Discord](https://discord.gg/3XFf78nAx5)
 
 ## Community Prompts
 
@@ -41,30 +44,25 @@ This repository includes a collection of community-contributed prompts that enha
 
 Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
 
-## Known Issues & Solutions
+## Tips and Tricks
 
-> **TODO**: Add link to issue #1 about the first known issue.
+## Known Issues
 
 | Issue | Description | Solution |
 |-------|-------------|----------|
-| Special Characters | Chat messages with special characters may cause test failures | Use custom Jest reporter that handles special characters:<br>1. Install reporter package<br>2. Configure Jest to use it<br>3. Run tests with --reporters flag |
-| Credit System & Downtime | Credits may be consumed during service interruptions or failed flows | Currently no built-in way to track or reimburse lost credits. Consider:<br>1. Document failed flows with timestamps<br>2. Contact support for significant issues<br>3. Request status page or real-time service health indicators |
-
-## Feature Requests
-
-Have a feature idea for Windsurf? Please submit it on the official feature request page:
-[Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
-
-## Tips and Tricks
-
-- Check the status pages mentioned above before debugging local issues
-- Bookmark both pages for quick access during incidents
+| Errors when using Claude Sonnet 3.5 | Check the status of Anthropic's API | Check <https://status.anthropic.com> |
+| Accept/Reject buttons become unresponsive | Chat has probably gotten too long | Reload window and start new chat |
+| Diff view does not work | Chat has probably gotten too long | Reload window and start new chat |
 
 ## Themes
 
 ### Default Themes
 
 Coming soon - Share your favorite themes with the community!
+
+## Videos
+
+[![Windsurf: The Enterprise AI IDE](https://img.youtube.com/vi/VcUl0vPJwxo/0.jpg)](https://www.youtube.com/watch?v=VcUl0vPJwxo)
 
 ## Contributing
 
