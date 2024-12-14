@@ -1,5 +1,4 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
 # Run lint-staged first to ensure files are properly formatted
 npx lint-staged
