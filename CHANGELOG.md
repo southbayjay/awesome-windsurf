@@ -2,9 +2,19 @@
 
 All notable changes to the awesome-windsurf repository will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+This project uses Calendar Versioning (YYYY.MM.MINOR).
 
-## [0.3.0] - 2024-12-14
+## [Unreleased]
+
+### Added
+
+- Automatic changelog generation using auto-changelog
+- GitHub workflow to update changelog on PR merges
+- Switched to Calendar Versioning
+- Added GitHub Actions status badge to README.md
+
+## [2024.12.2] - 2024-12-14
 
 ### Changed
 
@@ -18,7 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
   - Added repository information badges (Last Commit, Size, License, Stars)
 - Moved Global Rules Custom Prompt to simplify project structure
 
-## [0.2.0] - 2024-12-14
+## [2024.12.1] - 2024-12-14
 
 ### Changed
 
@@ -51,20 +61,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Added Known Issues & Solutions section with common problems and workarounds
 - Added OS-specific installation sections with macOS instructions and placeholders for Linux and Windows
 - Added link to custom Jest reporter for handling special characters in chat
-- Initial repository structure
-- README.md with comprehensive sections:
-  - Official Resources (Discord, Website, Documentation, Changelog)
-  - Getting Started guide
-  - Known Issues & Solutions section
-  - Placeholders for Tips, Themes, and Troubleshooting
-  - Community section
-  - Contributing guidelines
-- Links to official Codeium resources:
-  - Common Issues documentation
-  - Changelog
-  - Discord community
 
-## [0.1.0] - 2024-12-14
+## [2024.12.0] - 2024-12-14
 
 ### Added
 
@@ -87,3 +85,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 - Added disclaimer about community-driven nature
 
 For official Windsurf updates, please visit the [Codeium Changelog](https://codeium.com/changelog)
+
+[Unreleased]: https://github.com/ismar/awesome-windsurf/compare/2024.12.2...HEAD
+[2024.12.2]: https://github.com/ismar/awesome-windsurf/compare/2024.12.1...2024.12.2
+[2024.12.1]: https://github.com/ismar/awesome-windsurf/compare/2024.12.0...2024.12.1
+[2024.12.0]: https://github.com/ismar/awesome-windsurf/releases/tag/2024.12.0

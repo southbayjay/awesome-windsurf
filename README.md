@@ -6,6 +6,7 @@
 [![Maintained](https://img.shields.io/badge/Maintained-yes-58E5BB.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
 [![Last Commit](https://img.shields.io/github/last-commit/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf)
+[![GitHub Actions Status](https://github.com/ichoosetoaccept/awesome-windsurf/workflows/CI/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-E55882.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![GitHub stars](https://img.shields.io/github/stars/ichoosetoaccept/awesome-windsurf?style=social)](https://github.com/ichoosetoaccept/awesome-windsurf/stargazers)
 
@@ -18,7 +19,6 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Known Issues & Solutions](#known-issues--solutions)
 - [Tips and Tricks](#tips-and-tricks)
 - [Themes](#themes)
-- [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -43,6 +43,8 @@ Want to contribute? Create a directory with your username and add your prompts! 
 
 ## Known Issues & Solutions
 
+> **TODO**: Add link to issue #1 about the first known issue.
+
 | Issue | Description | Solution |
 |-------|-------------|----------|
 | Special Characters | Chat messages with special characters may cause test failures | Use custom Jest reporter that handles special characters:<br>1. Install reporter package<br>2. Configure Jest to use it<br>3. Run tests with --reporters flag |
@@ -63,12 +65,6 @@ Have a feature idea for Windsurf? Please submit it on the official feature reque
 ### Default Themes
 
 Coming soon - Share your favorite themes with the community!
-
-## Troubleshooting
-
-### Common Issues
-
-Coming soon - We will collect common issues and their solutions here.
 
 ## Contributing
 
