@@ -13,6 +13,10 @@ This project uses Calendar Versioning (YYYY.MM.MINOR).
 - GitHub workflow to update changelog on PR merges
 - Switched to Calendar Versioning
 - Added GitHub Actions status badge to README.md
+- Enhanced commitlint configuration with better documentation and additional rules:
+  - Added detailed comments for each commit type
+  - Added new rules for body and footer formatting
+  - Improved overall code documentation
 
 ## [2024.12.2] - 2024-12-14
 
