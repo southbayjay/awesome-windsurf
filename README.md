@@ -12,8 +12,8 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 
 ## Contents
 
-- [Getting Started](#getting-started)
 - [Official Resources](#official-resources)
+- [Getting Started](#getting-started)
 - [Please Read The Docs](#please-read-the-docs)
 - [Custom Prompts](#custom-prompts)
 - [FAQ](#faq)
@@ -83,9 +83,11 @@ This is a work in progress...
 - Bookmark both pages for quick access during incidents
 
 ## Themes
+
 *Coming soon - Share your favorite Windsurf themes here*
 
 ## Troubleshooting
+
 *Coming soon - We will collect common issues and solutions here*
 
 ## Community
@@ -95,6 +97,7 @@ This is a work in progress...
 ## Contributing
 
 We welcome contributions! If you have suggestions, tips, or resources to add:
+
 1. Fork this repository
 2. Create a new branch for your changes
 3. Submit a pull request with a clear description of your additions
