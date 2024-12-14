@@ -8,16 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.3] - 2024-12-14
 
 ### Added
+
 - Added link to official Cascade documentation in Rules Files section
 
 ## [0.2.2] - 2024-12-14
 
 ### Added
+
 - Added markdownlint configuration and GitHub Actions workflow for markdown linting
 
 ## [0.2.1] - 2024-12-14
 
 ### Added
+
 - Added direct link to Codeium documentation in the "Please Read" section
 - Added clarification about project's community focus and relationship to official documentation
 - Added community wishlist section with implementation status tracking
@@ -26,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added link to custom Jest reporter for handling special characters in chat
 
 ### Changed
+
 - Improved documentation clarity by making documentation links more accessible
 - Simplified installation section to focus on package managers only
 - Reorganized installation instructions into OS-specific sections
@@ -38,6 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.0] - 2024-12-14
 
 ### Added
+
 - New common issues documentation:
   - Windsurf rules files limitations and solutions
   - Allowed commands configuration troubleshooting
@@ -45,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Platform-specific installation instructions for all major OS
 
 ### Changed
+
 - Converted common issues to table format for better readability
 - Maintained professional tone in Discord link description
 - Improved documentation organization and readability
@@ -52,6 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2024-12-14
 
 ### Added
+
 - Initial repository structure
 - README.md with comprehensive sections:
   - Official Resources (Discord, Website, Documentation, Changelog)
@@ -68,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Windsurf logo
 
 ### Changed
+
 - Reorganized sections for better readability
 - Added disclaimer about community-driven nature
 
