@@ -9,16 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Added direct link to Codeium documentation in the "Please Read" section
+- Added clarification about project's community focus and relationship to official documentation
+- Added community wishlist section with implementation status tracking
+- Added information about credit system and service downtime issues
 - Added OS-specific installation sections with macOS instructions and placeholders for Linux and Windows
 - Added link to custom Jest reporter for handling special characters in chat
-- Added clarification about project's community focus and relationship to official documentation
 
 ### Changed
 - Improved documentation clarity by making documentation links more accessible
+- Simplified installation section to focus on package managers only
 - Reorganized installation instructions into OS-specific sections
 - Simplified installation section structure
 - Updated special characters issue with more specific solution
 - Simplified FAQ section to work-in-progress status
+- Made issue descriptions more realistic and community-driven
+- Converted community wishlist to table format with status indicators
 
 ## [0.2.0] - 2024-12-14
 
