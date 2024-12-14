@@ -65,6 +65,11 @@ These hooks will automatically run when you commit changes. If a hook fails, it 
    git commit -m "type: description"
    ```
 
+   Example commit messages:
+   - `git commit -m "docs: add link to windsurf docs"`
+   - `git commit -m "fix: correct typo in README"`
+   - `git commit -m "build: add missing dependency"`
+
 5. Push to your fork:
 
    ```bash

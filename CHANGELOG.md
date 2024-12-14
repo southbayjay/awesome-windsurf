@@ -17,6 +17,9 @@ This project uses Calendar Versioning (YYYY.MM.MINOR).
   - Added detailed comments for each commit type
   - Added new rules for body and footer formatting
   - Improved overall code documentation
+- Added contributing guidelines for repository maintenance
+- Enhanced Git workflow documentation
+- Updated development tooling configuration
 
 ## [2024.12.2] - 2024-12-14
 

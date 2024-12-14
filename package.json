@@ -1,8 +1,11 @@
 {
+  "name": "awesome-windsurf",
+  "description": "A curated hub of awesome Windsurf resources",
   "version": "2024.12.2",
+  "private": false,
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/config-conventional": "^19.0.0",
     "auto-changelog": "^2.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
@@ -14,5 +17,8 @@
   },
   "lint-staged": {
     "*.md": "markdownlint-cli2"
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
   }
 }
