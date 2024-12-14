@@ -25,5 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Reorganized sections for better readability
 - Added disclaimer about community-driven nature
-
+- Added details on rules files
+  
 For official Windsurf updates, please visit the [Codeium Changelog](https://codeium.com/changelog)
