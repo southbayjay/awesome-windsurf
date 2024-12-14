@@ -4,6 +4,15 @@ All notable changes to the awesome-windsurf repository will be documented in thi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.7] - 2024-12-14
+
+### Changed
+
+- Updated husky pre-commit hook:
+  - Removed deprecated husky initialization lines
+  - Reordered hooks to run lint-staged before CHANGELOG check
+  - Maintained CHANGELOG.md update enforcement
+
 ## [0.2.6] - 2024-12-14
 
 ### Changed
