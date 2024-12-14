@@ -1,8 +1,26 @@
-# Awesome Windsurf
+# [![Windsurf Logo](windsurf_logo_wordmark.png)](https://www.codeium.com/windsurf)
 
-A curated list of resources, tips, and community-driven content for Windsurf - the world's first agentic IDE.
+[![Join us on Discord](https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB)](https://discord.gg/3XFf78nAx5)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-58E5BB.svg)](CONTRIBUTING.md)
+[![Contributors](https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882)](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors)
+[![Maintained](https://img.shields.io/badge/Maintained-yes-58E5BB.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
+[![Last Commit](https://img.shields.io/github/last-commit/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-E55882.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![GitHub stars](https://img.shields.io/github/stars/ichoosetoaccept/awesome-windsurf?style=social)](https://github.com/ichoosetoaccept/awesome-windsurf/stargazers)
 
-The format is based on [Awesome Lists](https://github.com/sindresorhus/awesome) and this project adheres to those guidelines.
+A curated hub of resources, tips, and community-driven content for Windsurf - a very nice agentic IDE made by [Codeium](https://codeium.com).
+
+## Contents
+
+- [Please Read](#please-read)
+- [Community Prompts](#community-prompts)
+- [Known Issues & Solutions](#known-issues--solutions)
+- [Tips and Tricks](#tips-and-tricks)
+- [Themes](#themes)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Please Read
 
@@ -12,16 +30,16 @@ This is not an official Codeium repository. For official documentation and suppo
 - [Codeium Changelog](https://codeium.com/changelog)
 - [Join Codeium Discord](https://discord.gg/3XFf78nAx5)
 
-## Table of Contents
+## Community Prompts
 
-- [Please Read](#please-read)
-- [Known Issues & Solutions](#known-issues--solutions)
-- [Tips and Tricks](#tips-and-tricks)
-- [Themes](#themes)
-- [Troubleshooting](#troubleshooting)
-- [Community](#community)
-- [Contributing](#contributing)
-- [License](#license)
+This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `prompts/` to maintain organization:
+
+### Current Contributors
+
+- [@computerk](prompts/computerk/)
+  - [Global Rules](prompts/computerk/global-rules.md) - A comprehensive set of coding guidelines
+
+Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
 
 ## Known Issues & Solutions
 
@@ -52,16 +70,10 @@ Coming soon - Share your favorite themes with the community!
 
 Coming soon - We will collect common issues and their solutions here.
 
-## Community
-
-- [Windsurf Discord](https://discord.com/invite/3XFf78nAx5) - Join the Windsurf community on Discord
-
 ## Contributing
 
-1. Fork this repository
-2. Create a new branch for your feature
-3. Submit a pull request with a clear description of your additions
+Want to contribute? Great! Please check our [contributing guidelines](CONTRIBUTING.md) for details on how to add your contributions.
 
 ## License
 
-This list is under the MIT License.
+This list is dedicated to the public domain under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
