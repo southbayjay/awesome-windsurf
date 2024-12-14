@@ -47,9 +47,6 @@ We are trying to build a community around Windsurf that is self-sufficient and s
 ## Troubleshooting
 *Coming soon - We will collect common issues and solutions here*
 
-## Community
-- Connect with other Windsurf users
-
 ## Contributing
 We welcome contributions! If you have suggestions, tips, or resources to add:
 1. Fork this repository
