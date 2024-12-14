@@ -11,6 +11,7 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 > Our goal is to complement, not duplicate, the official documentation. We focus on community-contributed resources, tips, and solutions that enhance the Windsurf experience. For official features and usage documentation, please refer to the [Codeium Documentation](https://docs.codeium.com/getstarted/overview).
 
 ## Contents
+
 - [Getting Started](#getting-started)
 - [Official Resources](#official-resources)
 - [Please Read The Docs](#please-read-the-docs)
@@ -24,10 +25,13 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 - [Contributing](#contributing)
 
 ## Getting Started
+
 ### Installation
+
 For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
 
 ## Official Resources
+
 - [Windsurf Discord](https://discord.com/invite/3XFf78nAx5) - Join the Windsurf community on Discord
 - [Windsurf Website](https://www.codeium.com/windsurf) - Official website and download
 - [Codeium Documentation](https://docs.codeium.com/windsurf/getting-started) - Official documentation
@@ -37,32 +41,17 @@ For installation instructions, please refer to the [official website](https://ww
 
 We are trying to build a community around Windsurf that is self-sufficient and supportive. Before asking for help in Discord or emailing Codeium support, please take a few minutes to read the [Codeium documentation](https://docs.codeium.com/getstarted/overview) linked above.
 
-<<<<<<< HEAD
-## Getting Started
-
-### Installation
-
-For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
-=======
-## Custom Prompts
-
-Check out our [prompts directory](prompts/) for a collection of community-contributed prompts and guidelines, including:
-
-- [Global Rules](prompts/global-rules.md) - A comprehensive set of coding guidelines by computerK
->>>>>>> fix-markdown-lint
-
-## FAQ
-
-### General Questions
-This is a work in progress...
-
 ## Custom Prompts
 
 A collection of community-contributed prompts to enhance AI interactions and provide specialized guidance for code development. These prompts can be used to customize the behavior of Windsurf (or AI assistants in general) in various coding contexts.
 
-See the [prompts directory](content/prompts) for the full collection. Here are some highlights:
+Check out our [prompts directory](prompts/) for a collection of community-contributed prompts and guidelines, including:
 
-- [Global Rules](content/prompts/global-rules.md) - A comprehensive set of coding guidelines by computerK
+- [Global Rules](prompts/global-rules.md) - A comprehensive set of coding guidelines by computerK
+
+## FAQ
+
+This is a work in progress...
 
 ## Known Issues & Solutions
 
@@ -100,13 +89,11 @@ See the [prompts directory](content/prompts) for the full collection. Here are s
 *Coming soon - We will collect common issues and solutions here*
 
 ## Community
-<<<<<<< HEAD
-*Coming soon - We will collect community resources and links here*
-=======
+
 - [Windsurf Discord](https://discord.com/invite/3XFf78nAx5) - Join the Windsurf community on Discord
->>>>>>> fix-markdown-lint
 
 ## Contributing
+
 We welcome contributions! If you have suggestions, tips, or resources to add:
 1. Fork this repository
 2. Create a new branch for your changes
