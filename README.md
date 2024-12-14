@@ -30,16 +30,10 @@ This is not an official Codeium repository. For official documentation and suppo
 | Special Characters | Chat messages with special characters may cause test failures | Use custom Jest reporter that handles special characters:<br>1. Install reporter package<br>2. Configure Jest to use it<br>3. Run tests with --reporters flag |
 | Credit System & Downtime | Credits may be consumed during service interruptions or failed flows | Currently no built-in way to track or reimburse lost credits. Consider:<br>1. Document failed flows with timestamps<br>2. Contact support for significant issues<br>3. Request status page or real-time service health indicators |
 
-## Community Wishlist
+## Feature Requests
 
-| Feature Request | Description | Status |
-|----------------|-------------|---------|
-| Service Status Page | Real-time indicators of API and service health | ✅ Available via Provider Status Pages |
-| Credit System | Better tracking and management of credit usage | 🚧 In Development |
-| Custom Themes | Support for custom IDE themes | ❌ Not Yet Planned |
-| Command History | Access to previous command history | ❌ Not Yet Planned |
-
-> Legend: ✅ Implemented | 🚧 In Progress | ❌ Not Implemented
+Have a feature idea for Windsurf? Please submit it on the official feature request page:
+[Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
 
 ## Tips and Tricks
 
