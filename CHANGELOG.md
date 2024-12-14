@@ -5,6 +5,20 @@ All notable changes to the awesome-windsurf repository will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2024-12-14
+
+### Added
+- Added direct link to Codeium documentation in the "Please Read" section
+- Added OS-specific installation sections with macOS instructions and placeholders for Linux and Windows
+- Added link to custom Jest reporter for handling special characters in chat
+
+### Changed
+- Improved documentation clarity by making documentation links more accessible
+- Reorganized installation instructions into OS-specific sections
+- Simplified installation section structure
+- Updated special characters issue with more specific solution
+- Simplified FAQ section to work-in-progress status
+
 ## [0.2.0] - 2024-12-14
 
 ### Added

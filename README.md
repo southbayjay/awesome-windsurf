@@ -27,32 +27,27 @@ A curated list of awesome resources for working with the Windsurf code editor. W
 
 ## Please Read The Docs Before Asking For Help
 
-We are trying to build a community around Windsurf that is self-sufficient and supportive. Before asking for help in Discord or emailing Codeium support, please take a few minutes to read the Codeium documentation linked above.
+We are trying to build a community around Windsurf that is self-sufficient and supportive. Before asking for help in Discord or emailing Codeium support, please take a few minutes to read the [Codeium documentation](https://docs.codeium.com/getstarted/overview) linked above.
 
 ## Getting Started
-- Installation
-  - Download Windsurf from the [official website](https://www.codeium.com/windsurf) or run
-  - `brew install windsurf` (for MacOS)
+### Installation
+  - Download Windsurf from the [official website](https://www.codeium.com/windsurf) or use package managers for your OS:
 
-- Key Features
-  - AI Flow: A new approach to AI pair programming
-  - Cascade: Advanced AI coding assistant
-  - Smart Code Completion
-  - Natural Language Commands
-  - Contextual Code Understanding
+  ### macOS
+  ```bash
+  brew install windsurf
+  ```
+
+  ### Linux
+  > TODO: Linux installation instructions will be added once package managers and installation methods are confirmed.
+
+  ### Windows
+  > TODO: Windows installation instructions will be added once the installer and package manager support is finalized.
 
 ## FAQ
 
 ### General Questions
-- **Q: Which AI model should I use?**
-  - A: Windsurf supports multiple AI models. Cascade Base is the default and recommended model for most use cases. While other models may be available, Cascade Base provides the most stable and consistent experience.
-
-- **Q: Do I need to restart Windsurf often?**
-  - A: While not typically necessary, restarting Windsurf can help resolve certain issues. If you encounter problems, try starting a new chat or restarting the application.
-
-- **Q: What happens to my progress when I restart or start a new chat?**
-  - A: Starting a new chat will reset the conversation context. It's recommended to save important information or code changes before restarting.
-
+This is a work in progress...
 ## Known Issues & Solutions
 
 > For official documentation on common issues, please visit the [Codeium Common Issues Guide](https://docs.codeium.com/troubleshooting/common-issues)
@@ -61,17 +56,11 @@ We are trying to build a community around Windsurf that is self-sufficient and s
 
 | Issue | Description | Solution |
 |-------|-------------|----------|
-| Special Characters in Chat | Special characters can sometimes break the Cascade chat | Avoid using special characters in your prompts when possible |
+| Special Characters in Chat | Special characters (like ANSI escape codes) can break the chat interface | Use this [custom Jest reporter](https://gist.github.com/BryceEWatson/79ce7138bb4edb0a5ab6104cf1f6f72a) to clean and format test output for chat compatibility |
 | AI Model Availability | Sometimes certain AI models might be temporarily unavailable | Switch to Cascade Base as a reliable fallback option |
 | Chat Response Issues | Chat might become unresponsive or timeout | 1. Start a new chat session<br>2. Switch to Cascade Base<br>3. If problems persist, restart Windsurf |
 | Windsurf Rules Files | Rules don't appear to be honored | 1. Ensure your rules files are not more than 6k chars<br>2. Do not put any references to files in the rules files that would total more than 6k combined |
 | Allowed Commands | Commands in your allow list still prompt to be accepted | 1. This currently seems to be related to rules files bloating<br>2. See solutions for rules files above |
-
-### Best Practices
-- Keep chat prompts clear and free of special characters
-- Save important work before starting new chat sessions
-- Break down complex tasks into smaller, manageable chunks
-- If encountering issues, try starting a new chat before restarting the entire application
 
 ## Tips and Tricks
 *Coming soon - Share your favorite Windsurf tips here for maximum effectiveness with this awesome editor*
