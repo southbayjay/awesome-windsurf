@@ -100,7 +100,7 @@ We welcome contributions! If you have suggestions, tips, or resources to add:
 
 ## Custom Prompts
 
-A collection of community-contributed prompts to enhance AI interactions and provide specialized guidance for code development. These prompts can be used to customize the behavior of AI assistants in various coding contexts.
+A collection of community-contributed prompts to enhance AI interactions and provide specialized guidance for code development. These prompts can be used to customize the behavior of Windsurf (or AI assistants in general) in various coding contexts.
 
 See the [prompts directory](content/prompts) for the full collection. Here are some highlights:
 
