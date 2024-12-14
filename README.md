@@ -38,13 +38,23 @@ Monitor AI service health directly:
 We are trying to build a community around Windsurf that is self-sufficient and supportive. Before asking for help in Discord or emailing Codeium support, please take a few minutes to read the [Codeium documentation](https://docs.codeium.com/getstarted/overview) linked above.
 
 ## Getting Started
+
 ### Installation
+
 For installation instructions, please refer to the [official website](https://www.codeium.com/windsurf).
 
 ## FAQ
 
 ### General Questions
 This is a work in progress...
+
+## Custom Prompts
+
+A collection of community-contributed prompts to enhance AI interactions and provide specialized guidance for code development. These prompts can be used to customize the behavior of Windsurf (or AI assistants in general) in various coding contexts.
+
+See the [prompts directory](content/prompts) for the full collection. Here are some highlights:
+
+- [Global Rules](content/prompts/global-rules.md) - A comprehensive set of coding guidelines by computerK
 
 ## Known Issues & Solutions
 
@@ -80,6 +90,9 @@ This is a work in progress...
 
 ## Troubleshooting
 *Coming soon - We will collect common issues and solutions here*
+
+## Community
+*Coming soon - We will collect community resources and links here*
 
 ## Contributing
 We welcome contributions! If you have suggestions, tips, or resources to add:

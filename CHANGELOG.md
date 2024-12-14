@@ -13,7 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2.2] - 2024-12-14
 
 ### Added
-- Added markdownlint configuration and GitHub Actions workflow for markdown linting
+- Added computerK's Global Rules prompt
+- Created dedicated prompts directory for community contributions
+
+### Changed
+- Simplified installation instructions to point to official documentation
+- Restructured README.md for better maintainability
+- Moved custom prompts to dedicated files
 
 ## [0.2.1] - 2024-12-14
 
