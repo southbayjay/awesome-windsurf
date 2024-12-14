@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Added direct link to Codeium documentation in the "Please Read" section
+- Added markdownlint configuration and GitHub Actions workflow for markdown linting
 - Added clarification about project's community focus and relationship to official documentation
 - Added community wishlist section with implementation status tracking
 - Added information about credit system and service downtime issues
