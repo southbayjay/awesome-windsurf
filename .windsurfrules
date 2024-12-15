@@ -6,3 +6,4 @@
 6. The main branch is protected and we cannot push directly to it. We use the merge queue to merge our PRs.
 7. Regarding all the automation we have here.. we do all of it to make contributing to this repository as easy and smooth as possible. We don't do it to arbitrarily add complexity.
 8. When working with Github PR's and issues, be sure to update them regularly as we make progress here.
+9. When working with Github's PR's and issues, make sure to also read the comments as they may contain crucial information and updates on the original PR/issue text.
