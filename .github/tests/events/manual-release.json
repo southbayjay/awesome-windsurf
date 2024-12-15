@@ -1,0 +1,21 @@
+{
+  "pull_request": {
+    "number": 44,
+    "head": {
+      "sha": "0a97d696",
+      "ref": "test/manual-release"
+    },
+    "base": {
+      "ref": "main"
+    },
+    "labels": [],
+    "title": "Manual Release Test"
+  },
+  "repository": {
+    "name": "awesome-windsurf",
+    "owner": {
+      "login": "ichoosetoaccept"
+    }
+  },
+  "action": "opened"
+}

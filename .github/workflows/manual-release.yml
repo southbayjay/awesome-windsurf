@@ -1,0 +1,13 @@
+name: Manual Release
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test Step
+        run: echo "Testing manual release workflow"

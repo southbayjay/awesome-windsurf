@@ -5,6 +5,7 @@
   "private": false,
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
+    "@kie/act-js": "^2.6.2",
     "cspell": "^8.17.0",
     "eslint": "^8.56.0",
     "husky": "^9.1.7",
@@ -29,7 +30,8 @@
     "lint:yaml": "find . -regex '.*\\.ya?ml$' -not -path './node_modules/*' -exec yamllint {} \\;",
     "lint:shell": "find .husky -type f -not -path '*/_*' -exec shellcheck {} \\;",
     "lint:all": "npm run lint:js && npm run lint:json && npm run lint:yaml && npm run lint:shell && npm run fix:md && npm run spell-check && npm run check-codeblocks",
-    "test:actions": "act -n"
+    "test:workflow": "cd .github/tests && ./test-workflow-wrapper.sh",
+    "test:workflows": "for w in create-release-tag publish-release auto-label markdownlint link-check; do WORKFLOW=$w EVENT=manual-release npm run test:workflow || exit 1; done"
   },
   "lint-staged": {
     "*.md": [
@@ -37,9 +39,17 @@
       "cspell",
       "remark --quiet --frail"
     ],
-    "*.js": ["eslint"],
-    "*.json": ["jsonlint -q"],
-    "*.{yml,yaml}": ["yamllint"],
-    ".husky/*": ["shellcheck"]
+    "*.js": [
+      "eslint"
+    ],
+    "*.json": [
+      "jsonlint -q"
+    ],
+    "*.{yml,yaml}": [
+      "yamllint"
+    ],
+    ".husky/*": [
+      "shellcheck"
+    ]
   }
 }
