@@ -9,9 +9,9 @@ set -e
 
 # Cleanup function
 cleanup() {
-    if [ -f ".github/tests/setup.sh" ]; then
+    if [ -f "$GITHUB_WORKSPACE/.github/tests/setup.sh" ]; then
         echo "🧹 Cleaning up temporary files..."
-        rm -f .github/tests/setup.sh
+        rm -f "$GITHUB_WORKSPACE/.github/tests/setup.sh"
     fi
 }
 trap cleanup EXIT
@@ -60,7 +60,7 @@ fi
 
 # Create setup script
 echo "🛠️ Creating setup script..."
-cat > .github/tests/setup.sh << 'EOL'
+cat > "$GITHUB_WORKSPACE/.github/tests/setup.sh" << 'EOL'
 GITHUB_WORKSPACE=/github/workspace
 GITHUB_REPOSITORY=ichoosetoaccept/awesome-windsurf
 GITHUB_SHA=$(git rev-parse HEAD)
@@ -80,7 +80,7 @@ if [ -n "$WORKFLOW_INPUTS" ]; then
         KEY=$(echo "$input" | cut -d= -f1)
         VALUE=$(echo "$input" | cut -d= -f2)
         KEY_UPPER=$(echo "$KEY" | tr '[:lower:]' '[:upper:]')
-        echo "INPUT_${KEY_UPPER}=${VALUE}" >> .github/tests/setup.sh
+        echo "INPUT_${KEY_UPPER}=${VALUE}" >> "$GITHUB_WORKSPACE/.github/tests/setup.sh"
     done
 fi
 
@@ -95,11 +95,12 @@ echo "🔍 Testing workflow: $WORKFLOW_FILE"
 echo "📋 Using event: $EVENT_FILE"
 echo "📍 Current directory: $GITHUB_WORKSPACE"
 
-act pull_request \
+cd "$GITHUB_WORKSPACE" && act pull_request \
     -W "$WORKFLOW_FILE" \
     -e "$EVENT_FILE" \
     -s GITHUB_TOKEN="$GITHUB_TOKEN" \
     -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-latest \
     --container-architecture linux/amd64 \
     --artifact-server-path /tmp/artifacts \
-    --env-file .github/tests/setup.sh
+    --env-file .github/tests/setup.sh \
+    --bind

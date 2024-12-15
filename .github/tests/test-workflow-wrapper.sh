@@ -15,4 +15,5 @@ if [ -z "$WORKFLOW" ] || [ -z "$EVENT" ]; then
 fi
 
 # Run the workflow test
-./scripts/test-workflow.sh "../workflows/${WORKFLOW}.yml" "events/${EVENT}.json"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+"$SCRIPT_DIR/scripts/test-workflow.sh" "$SCRIPT_DIR/../workflows/${WORKFLOW}.yml" "$SCRIPT_DIR/events/${EVENT}.json"
