@@ -10,3 +10,4 @@ Adhere to the principle of DRY (Don't Repeat Yourself) when writing anything in 
 Before creating new branches, always check which branch we're currently working on and decide if that makes sense. Correct if not.
 Never say something without being certain. Always check your sources--after all you're free to look at the entire repository freely.
 Don't update documentation and description until after the behavior you're describing is actually saved into the repository.
+Always double check your changes before committing, pushing and ESPECIALLY before creating PRs.

@@ -6,26 +6,40 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "cspell": "^8.17.0",
+    "eslint": "^8.56.0",
     "husky": "^9.1.7",
+    "jsonlint": "^1.6.3",
     "lint-staged": "^15.2.11",
     "markdown-link-check": "^3.13.6",
     "markdownlint-cli2": "^0.16.0",
+    "prettier": "^3.1.1",
     "remark-cli": "^12.0.1",
-    "remark-lint-fenced-code-flag": "^4.0.0"
+    "remark-lint-fenced-code-flag": "^4.0.0",
+    "shellcheck": "^2.2.0",
+    "yaml-lint": "^1.7.0"
   },
   "scripts": {
     "postinstall": "husky",
     "check-links": "find . -name '*.md' -not -path './node_modules/*' -print0 | xargs -0 -n1 npx markdown-link-check --verbose -c .markdown-link-check.json",
     "fix:md": "markdownlint-cli2 --fix \"**/*.md\"",
     "spell-check": "cspell \"**/*.md\"",
-    "check-codeblocks": "remark . --quiet --frail"
+    "check-codeblocks": "remark . --quiet --frail",
+    "lint:js": "eslint --ext .js .",
+    "lint:json": "find . -name '*.json' -not -path './node_modules/*' -exec jsonlint -q {} \\;",
+    "lint:yaml": "find . -regex '.*\\.ya?ml$' -not -path './node_modules/*' -exec yamllint {} \\;",
+    "lint:shell": "find .husky -type f -not -path '*/_*' -exec shellcheck {} \\;",
+    "lint:all": "npm run lint:js && npm run lint:json && npm run lint:yaml && npm run lint:shell && npm run fix:md && npm run spell-check && npm run check-codeblocks",
+    "test:actions": "act -n"
   },
   "lint-staged": {
     "*.md": [
       "markdownlint-cli2",
-      "markdown-link-check -c .markdown-link-check.json",
       "cspell",
       "remark --quiet --frail"
-    ]
+    ],
+    "*.js": ["eslint"],
+    "*.json": ["jsonlint -q"],
+    "*.{yml,yaml}": ["yamllint"],
+    ".husky/*": ["shellcheck"]
   }
 }

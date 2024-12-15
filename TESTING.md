@@ -1,74 +1,94 @@
 # Testing Strategy
 
-This document outlines our testing strategy to ensure documentation quality and consistency.
+This document outlines our comprehensive testing strategy for maintaining code quality in the repository.
 
-## Overview
+## Automated Testing
 
-Our testing approach focuses on several key areas:
+We use various automated tools to ensure code quality across different file types:
 
-1. Documentation Structure
-2. Link Validation
-3. Markdown Style
-4. Content Quality
+### Markdown Files
 
-## Automated Tests
+- **Spell Checking**: Uses `cspell` with a custom dictionary
+- **Link Checking**: Validates all links using `markdown-link-check`
+- **Code Block Validation**: Ensures code blocks have language flags using `remark-lint-fenced-code-flag`
+- **Markdown Linting**: Uses `markdownlint-cli2` for consistent formatting
 
-### Documentation Structure
+### JavaScript Files
 
-- Proper heading hierarchy
-- Required sections in framework-specific guides
-- Internal reference validation
+- **ESLint**: Enforces code style and catches potential errors
+- **Prettier**: Ensures consistent code formatting
 
-### Link Validation
+### JSON Files
 
-We use `markdown-link-check` to verify all links are valid. Configuration is in `.markdown-link-check.json`.
+- **jsonlint**: Validates JSON syntax and formatting
 
-### Markdown Style
+### YAML Files
 
-We use `markdownlint-cli2` to enforce consistent markdown styling.
+- **yaml-lint**: Validates YAML syntax and structure
+- Particularly important for GitHub Actions workflows
 
-### Content Quality
+### Shell Scripts
 
-- Spell checking with custom dictionary support
-- Consistent terminology usage
-- Code block syntax validation
+- **shellcheck**: Analyzes shell scripts for common errors and pitfalls
+- Applied to husky hooks and other shell scripts
 
-## Test Execution
+## GitHub Actions Testing
 
-Our tests run at different stages:
+For testing GitHub Actions:
 
-### Local Development
+- Use `act` locally to simulate workflow runs
+- Test workflows in isolation using `act -n` (dry run)
+- Create test events to trigger specific workflow scenarios
 
-1. Install dependencies:
+## Pre-commit Hooks
 
-   ```bash
-   npm install
-   ```
+We use `husky` and `lint-staged` to run tests before each commit:
 
-2. Run markdown linting:
+1. Markdown files are checked for:
+   - Spelling
+   - Link validity
+   - Code block formatting
+   - General markdown style
+2. JavaScript files are linted with ESLint
+3. JSON files are validated with jsonlint
+4. YAML files are checked with yaml-lint
+5. Shell scripts are analyzed with shellcheck
 
-   ```bash
-   npm run fix:md
-   ```
+## Running Tests Locally
 
-3. Check links:
+Use these npm scripts to run tests:
 
-   ```bash
-   npm run check-links
-   ```
+```bash
+# Run all tests
+npm run lint:all
 
-### Pre-Commit
+# Individual test suites
+npm run lint:js         # Test JavaScript files
+npm run lint:json       # Test JSON files
+npm run lint:yaml       # Test YAML files
+npm run lint:shell      # Test shell scripts
+npm run fix:md         # Test and fix markdown files
+npm run spell-check    # Check spelling
+npm run check-links    # Validate markdown links
+npm run check-codeblocks # Validate code blocks
+npm run test:actions   # Test GitHub Actions (dry run)
+```
 
-We use Husky to enforce quality checks:
+## Future Improvements
 
-- Pre-commit: Runs `lint-staged` with markdownlint
-- Commit Message: Uses `commitlint` to enforce our [commit message guidelines](CONTRIBUTING.md#commit-msg)
+Potential areas for enhancement:
 
-### Continuous Integration
+1. Add unit testing for JavaScript code
+2. Implement integration tests for GitHub Actions
+3. Add automated security scanning
+4. Implement performance benchmarking for workflows
+5. Add automated accessibility checks for documentation
 
-GitHub Actions automatically run tests when:
+## Contributing
 
-- Markdown files are modified (in pushes and pull requests)
-- Nightly at 02:00 UTC (link checking)
+When adding new features or making changes:
 
-Failed checks will block PR merging until resolved.
+1. Add appropriate tests for new functionality
+2. Update this document if testing procedures change
+3. Ensure all tests pass locally before pushing
+4. Consider adding new test cases for edge scenarios
