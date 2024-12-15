@@ -26,6 +26,8 @@ jobs:
       - name: Create and push tag
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git tag -a $VERSION -m "Release $VERSION"
           git push origin $VERSION
         env:
