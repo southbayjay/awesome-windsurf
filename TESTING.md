@@ -46,7 +46,7 @@ We support local testing of GitHub Actions workflows using [`act`](https://githu
 
 2. Install GitHub CLI:
    - macOS: `brew install gh`
-   - Other: See [GitHub CLI installation](https://cli.github.com/manual/installation)
+   - Other: See [GitHub CLI installation](https://github.com/cli/cli#installation)
 
 3. Authenticate with GitHub:
 
