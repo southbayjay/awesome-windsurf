@@ -2,8 +2,8 @@
 # Logic:
 # 1. Runs on every push and PR
 # 2. Uses markdownlint-cli2 (same as local)
-# 3. Fails if any markdown files don't meet standards
-# 4. Local pre-commit hook should catch these first
+# 3. Attempts to auto-fix issues and commits them
+# 4. If fixes aren't possible, fails the check
 
 name: Markdown Lint
 
@@ -19,8 +19,20 @@ jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Run markdownlint
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Fix markdown
+        run: npm run fix:md
+      - name: Commit fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-fix markdown formatting"
+          file_pattern: "*.md"
+      - name: Check remaining issues
         uses: DavidAnson/markdownlint-cli2-action@v13
         with:
           globs: '**/*.md'

@@ -1,9 +1,9 @@
-1. The CHANGELOG.md is automatically updated via our pre-push husky hook.
-2. This is a public repository, so please be respectful of others and make sure the content makes sense to others.
-3. We have access to the Github CLI via the gh command. We are already authenticated.
-4. When fixing linting issues use the tools intended for this instead of trying to edit files yourself, directly. You can see which tools we have in package.json.
-5. When committing, put quotes around your commit message. Also, it's a good practice to format commit messages with a type and description. The correct format should be: type: description.
-6. The main branch is protected and we cannot push directly to it. We use the merge queue to merge our PRs.
-7. Regarding all the automation we have here.. we do all of it to make contributing to this repository as easy and smooth as possible. We don't do it to arbitrarily add complexity.
-8. When working with Github PR's and issues, be sure to update them regularly as we make progress here.
-9. When working with Github's PR's and issues, make sure to also read the comments as they may contain crucial information and updates on the original PR/issue text.
+This is a public repository, so please be respectful of others and make sure the content makes sense to others.
+We have access to the Github CLI via the gh command. We are already authenticated.
+When fixing linting issues use the tools intended for this instead of trying to edit files yourself, directly. You can see which tools we have in package.json.
+When committing, put quotes around your commit message. Also, it's a good practice to format commit messages with a type and description. The correct format should be: type: description.
+The main branch is protected and we cannot push directly to it. We use the merge queue to merge our PRs.
+Regarding all the automation we have here.. we do all of it to make contributing to this repository as easy and smooth as possible. We don't do it to arbitrarily add complexity.
+When working with Github PR's and issues, be sure to update them regularly as we make progress here.
+When working with Github's PR's and issues, make sure to also read the comments as they may contain crucial information and updates on the original PR/issue text.
+Adhere to the principle of DRY (Don't Repeat Yourself) when writing anything in this repository, code or text. Keep this in mind when reviewing files as well.
