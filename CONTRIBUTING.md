@@ -32,19 +32,11 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    cd awesome-windsurf
    ```
 
-3. Create a new branch following our naming convention:
+3. Create a new branch for your changes:
 
    ```bash
-
-   git checkout -b TYPE/description
+   git checkout -b your-branch-name
    ```
-
-   Where TYPE is one of:
-   - `add/*` for new documentation
-   - `update/*` for documentation updates
-   - `remove/*` for removed documentation
-   - `fix/*` for typos and formatting fixes
-   - `meta/*` for repository changes
 
 4. Make your changes and commit them using conventional commits:
 
@@ -61,7 +53,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 5. Push to your fork:
 
    ```bash
-   git push origin TYPE/description
+   git push origin your-branch-name
    ```
 
 6. Open a Pull Request from your fork to our main branch
