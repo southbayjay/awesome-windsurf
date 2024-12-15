@@ -17,9 +17,8 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 
 1. Ensure your contribution adds value to the Windsurf community
 2. Follow the existing style and format of the repository
-3. Update the CHANGELOG.md for any notable changes
-4. Keep descriptions clear and concise
-5. Test any code or commands before submitting
+3. Keep descriptions clear and concise
+4. Test any code or commands before submitting
 
 ## How to contribute
 
@@ -32,13 +31,21 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    cd awesome-windsurf
    ```
 
-3. Create a new branch for your changes:
+3. Install dependencies and set up Git hooks:
+
+   ```bash
+   npm install
+   ```
+
+   This will install all required dependencies and set up Git hooks through Husky automatically.
+
+4. Create a new branch for your changes:
 
    ```bash
    git checkout -b your-branch-name
    ```
 
-4. Make your changes and commit them using conventional commits:
+5. Make your changes and commit them using conventional commits:
 
    ```bash
    git add .
@@ -46,17 +53,19 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    ```
 
    Example commit messages:
-   - `git commit -m "docs: add link to windsurf docs"`
-   - `git commit -m "fix: correct typo in README"`
-   - `git commit -m "build: add missing dependency"`
+   - `git commit -m "add: add link to windsurf docs"`
+   - `git commit -m "update: improve clarity of installation steps"`
+   - `git commit -m "remove: remove old documentation"`
+   - `git commit -m "fix: correct typos in README"`
+   - `git commit -m "meta: update commitlint configuration"`
 
-5. Push to your fork:
+6. Push to your fork:
 
    ```bash
    git push origin your-branch-name
    ```
 
-6. Open a Pull Request from your fork to our main branch
+7. Open a Pull Request from your fork to our main branch
 
 ### Pull Request Requirements
 
@@ -82,9 +91,8 @@ For detailed information about contributing prompts, including:
 - Directory structure
 - Standard files and naming
 - Documentation requirements
-- Best practices and examples
 
-Please see [prompts/README.md](prompts/README.md).
+Please see [memories/README.md](memories/README.md).
 
 ## Git Hooks
 
@@ -107,7 +115,13 @@ This project uses several git hooks to maintain code quality:
    - fix: correct typos in README
    ```
 
-These hooks will automatically run when you commit changes. If a hook fails, it will provide feedback on what needs to be fixed.
+3. **pre-push**: Automatically updates the CHANGELOG.md using auto-changelog, which:
+   - Generates a clean, standardized changelog based on commit history
+   - Maintains an "Unreleased" section for upcoming changes
+   - Follows Calendar Versioning (YYYY.MM.MINOR)
+   - Groups changes into categories (Merged, Fixed, Commits)
+
+These hooks will automatically run when you commit or push changes. If a hook fails, it will provide feedback on what needs to be fixed.
 
 ## Need Help?
 

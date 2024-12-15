@@ -35,12 +35,12 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 ## Community Prompts
 
-This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `prompts/` to maintain organization:
+This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `memories/` to maintain organization:
 
 ### Current Contributors
 
-- [@computerk](prompts/computerk/)
-  - [Global Rules](prompts/computerk/global-rules.md) - A comprehensive set of coding guidelines
+- [@computerk](memories/computerk/)
+  - [Global Rules](memories/computerk/global-rules.md) - A comprehensive set of coding guidelines
 
 Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
 
