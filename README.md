@@ -35,16 +35,27 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 ## Community Prompts
 
-This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `memories/` to maintain organization:
+This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `memories/` to maintain organization.
 
-### Current Contributors
+### Finding Contributions
 
-- [@computerk](memories/computerk/)
-  - [Global Rules](memories/computerk/global-rules.md) - A comprehensive set of coding guidelines
+To explore and discover community contributions:
+
+1. Browse the [`memories/`](memories/) directory to explore prompt contributions
+2. Check the [GitHub contributors page](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors) to see everyone who has helped this project
+
+### Recent Examples
+
+This is a rotating selection of recent contributions from the community.
+
+- [@computerk](memories/computerk/) - Global coding guidelines
+- [@fridaystreet](memories/fridaystreet/) - Rules file optimization insights
 
 Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
 
 ## Tips and Tricks
+
+1. When working on a Markdown file, use ⌘/CTRL + K, then I to open formatted Markdown to the side.
 
 ## Known Issues
 
@@ -53,6 +64,8 @@ Want to contribute? Create a directory with your username and add your prompts! 
 | Errors when using Claude Sonnet 3.5 | Check the status of Anthropic's API | Check <https://status.anthropic.com> |
 | Accept/Reject buttons become unresponsive | Chat has probably gotten too long | Reload window and start new chat |
 | Diff view does not work | Chat has probably gotten too long | Reload window and start new chat |
+| Rules files not being honored | Rules in configuration files don't appear to work | 1. Ensure rules files are under 6k chars<br>2. Total size of referenced files should not exceed 6k chars |
+| Allowed commands still prompting | Commands in allow list still require acceptance | Currently related to rules files size - see solution above |
 
 ## Contributing
 
