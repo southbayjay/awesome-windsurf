@@ -30,7 +30,6 @@ module.exports = {
     'type-case': [2, 'always', 'lowerCase'],
     'type-empty': [2, 'never'],
     'subject-empty': [2, 'never'],
-    'subject-case': [2, 'always', 'lowerCase'],
     'subject-full-stop': [2, 'never', '.']
   }
 }
