@@ -87,23 +87,32 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 
 ## Release Process
 
-We use GitHub Releases to document changes to this repository. Each release follows the Calendar Versioning format (YYYY.MM.PATCH).
+Our releases are managed through an automated GitHub workflow:
 
-### Pull Request Labels
+### Version Format
 
-To help organize our releases, we use a simple labeling system:
+We use Calendar Versioning (CalVer) with the format: YYYY.MM.PATCH
+Example: 2024.12.1
 
-- `content`: For documentation, guides, and content changes
-- `meta`: For repository maintenance and workflow changes
+### Release Labels
 
-### Creating a Release
+When your PR is ready for release:
 
-Releases are automatically generated based on merged pull requests and their labels. The process is:
+- Add the `release` label to trigger the release workflow
+- Use additional labels to categorize changes:
+  - `content`: Documentation and content changes
+  - `meta`: Repository maintenance and workflow changes
 
-1. PRs are labeled appropriately during review
-2. When ready for a release, we create a new GitHub Release
-3. Release notes are automatically generated based on PR labels
-4. The release version follows YYYY.MM.PATCH format
+### Automated Processes
+
+Our release workflow handles:
+
+- Version bumping based on CalVer
+- Changelog generation from commit history
+- GitHub release creation with categorized notes
+- Git tag creation and management
+
+Note: All changes are merged through our merge queue for additional safety, as direct pushes to main are not allowed.
 
 ## Contributing Prompts
 
