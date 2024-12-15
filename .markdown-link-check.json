@@ -11,6 +11,10 @@
     {
       "pattern": "^mailto:",
       "comment": "Ignore mailto links"
+    },
+    {
+      "pattern": "^https://www\\.reddit\\.com/.*$",
+      "comment": "Reddit blocks automated requests"
     }
   ],
   "replacementPatterns": [
