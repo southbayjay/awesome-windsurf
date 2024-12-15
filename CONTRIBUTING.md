@@ -58,6 +58,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    - `git commit -m "remove: remove old documentation"`
    - `git commit -m "fix: correct typos in README"`
    - `git commit -m "meta: update commitlint configuration"`
+   - `git commit -m "release: added significant new section X"`
 
 6. Push to your fork:
 
@@ -130,7 +131,7 @@ We use [husky](https://github.com/typicode/husky) to manage our Git hooks. These
 
 - Validates commit message format
 - Ensures messages follow pattern: `type: description`
-- Valid types: `add`, `update`, `remove`, `fix`, `meta`
+- Valid types: `add`, `update`, `remove`, `fix`, `meta`, `release`
 
 ### pre-commit
 
