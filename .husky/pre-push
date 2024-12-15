@@ -1,9 +1,0 @@
-#!/usr/bin/env sh
-
-# This hook runs pre-push validations
-# Logic:
-# 1. Add any pre-push checks here (e.g., tests)
-# Note: Version and changelog management is handled by GitHub Actions
-
-# Example: Run tests before pushing
-# npm test
