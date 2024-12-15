@@ -7,3 +7,7 @@ Regarding all the automation we have here.. we do all of it to make contributing
 When working with Github PR's and issues, be sure to update them regularly as we make progress here.
 When working with Github's PR's and issues, make sure to also read the comments as they may contain crucial information and updates on the original PR/issue text.
 Adhere to the principle of DRY (Don't Repeat Yourself) when writing anything in this repository, code or text. Keep this in mind when reviewing files as well.
+Before creating new branches, always check which branch we're currently working on and decide if that makes sense. Correct if not.
+Never say something without being certain. Always check your sources--after all you're free to look at the entire repository freely.
+Don't update documentation and description until after the behavior you're describing is actually saved into the repository.
+Always double check your changes before committing, pushing and ESPECIALLY before creating PRs.

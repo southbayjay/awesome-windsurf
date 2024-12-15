@@ -19,6 +19,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 2. Follow the existing style and format of the repository
 3. Keep descriptions clear and concise
 4. Test any code or commands before submitting
+5. Follow our [testing guidelines](TESTING.md) for quality assurance
 
 ## How to contribute
 
