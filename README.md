@@ -79,7 +79,11 @@ Want to contribute? Create a directory with your username and add your prompts! 
 
 ## Contributing
 
-Want to contribute? Great! Please check our [contributing guidelines](CONTRIBUTING.md) for details on how to add your contributions.
+We welcome all contributions! Please check out our [Contributing Guide](CONTRIBUTING.md) for guidelines about:
+
+- How to submit changes
+- Our standards
+- Release process using GitHub Releases
 
 ## FAQ
 
