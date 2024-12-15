@@ -1,0 +1,30 @@
+name: Auto Label Release PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches: [main]
+
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Check commit messages and add label
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          # Get all commit messages in the PR
+          commits=$(gh pr view $PR_NUMBER --json commits --jq '.commits[].messageHeadline')
+          
+          # Check if any commit message starts with "release:"
+          if echo "$commits" | grep -q "^release:"; then
+            gh pr edit $PR_NUMBER --add-label "release"
+          fi
