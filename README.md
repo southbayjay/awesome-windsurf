@@ -23,7 +23,6 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Videos](#videos)
 - [FAQ](#faq)
 - [License](#license)
-- [Contributing](#contributing)
 
 ## Please Read
 
@@ -43,7 +42,7 @@ This repository includes a collection of community-contributed prompts that enha
 - [@computerk](prompts/computerk/)
   - [Global Rules](prompts/computerk/global-rules.md) - A comprehensive set of coding guidelines
 
-Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
+Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](CONTRIBUTING.md) section for more details.
 
 ## Tips and Tricks
 
@@ -88,17 +87,6 @@ Please check the [official Codeium pricing page](https://codeium.com/pricing) fo
 ### How do I contribute to this repository?
 
 Check out our [Contributing Guidelines](CONTRIBUTING.md) for information on how to add prompts, tips, or other resources to this repository.
-
-## Contributing
-
-We welcome contributions! To contribute:
-
-1. Fork the repository
-2. Create a new directory with your username
-3. Add your prompts and documentation
-4. Submit a pull request
-
-Please ensure your contributions follow our guidelines and are well-documented.
 
 ## License
 
