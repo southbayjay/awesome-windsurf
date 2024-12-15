@@ -6,7 +6,7 @@ name: Create Release Tag
 
 on:
   pull_request:
-    types: [opened, reopened, edited]
+    types: [opened, reopened, edited, synchronize]
     branches: [main]
 
 jobs:
@@ -38,7 +38,10 @@ jobs:
       - name: Update package.json version
         run: |
           VERSION="${{ steps.version.outputs.version }}"
-          npm version $VERSION --no-git-tag-version
+          CURRENT_VERSION=$(npm pkg get version | tr -d '"')
+          if [ "$VERSION" != "$CURRENT_VERSION" ]; then
+            npm version $VERSION --no-git-tag-version
+          fi
 
       - name: Create Pull Request comment
         uses: actions/github-script@v7
