@@ -87,23 +87,50 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 
 ## Release Process
 
-We use GitHub Releases to document changes to this repository. Each release follows the Calendar Versioning format (YYYY.MM.PATCH).
+Our releases are managed through an automated GitHub workflow that monitors changes and creates releases when significant updates occur. Every merge to the `main` branch results in a release, ensuring that the public repository always reflects released versions.
 
-### Pull Request Labels
+### Merging to Main
 
-To help organize our releases, we use a simple labeling system:
+PRs can only be merged to `main` when they are ready for release. This is enforced by requiring either:
 
-- `content`: For documentation, guides, and content changes
-- `meta`: For repository maintenance and workflow changes
+- The `version-bump` label (added automatically when changes are significant), or
+- A commit message starting with `release:`
 
-### Creating a Release
+This ensures that all changes in the public repository are properly versioned and released.
 
-Releases are automatically generated based on merged pull requests and their labels. The process is:
+### Automatic Releases
 
-1. PRs are labeled appropriately during review
-2. When ready for a release, we create a new GitHub Release
-3. Release notes are automatically generated based on PR labels
-4. The release version follows YYYY.MM.PATCH format
+A new release is automatically created when:
+
+- More than 5 files are changed in a PR, or
+- More than 10 commits have been made since the last release
+
+### Manual Releases
+
+You can trigger a release manually by including a commit with a message that starts with `release:` followed by a description of your changes:
+
+```bash
+git commit -m "release: major update to custom prompts section"
+```
+
+The version number will be calculated automatically based on the current date (YYYY.MM) and incrementing the patch number from the last release.
+
+### Release Process
+
+The workflow will:
+
+1. Calculate the next version number using Calendar Versioning (YYYY.MM.PATCH)
+2. Update package.json with the new version
+3. Add a comment to your PR with the upcoming version
+4. Add the `version-bump` label to your PR
+
+When the PR is merged:
+
+- A new git tag is created
+- A GitHub release is published
+- Release notes are automatically generated
+
+Note: All changes are merged through our merge queue for additional safety, as direct pushes to main are not allowed.
 
 ## Contributing Prompts
 
