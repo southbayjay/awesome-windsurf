@@ -1,0 +1,22 @@
+{
+  "pull_request": {
+    "number": 44,
+    "merged": false,
+    "head": {
+      "sha": "0a97d696",
+      "ref": "feature/test-changes"
+    },
+    "base": {
+      "ref": "main"
+    },
+    "title": "feat: add multiple test files",
+    "labels": []
+  },
+  "repository": {
+    "name": "awesome-windsurf",
+    "owner": {
+      "login": "ichoosetoaccept"
+    }
+  },
+  "action": "opened"
+}
