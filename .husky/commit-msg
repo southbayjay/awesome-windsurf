@@ -1,3 +1,9 @@
 #!/bin/sh
 
-npx --no -- commitlint --edit ${1}
+# This hook validates commit message format
+# Logic:
+# 1. Runs commitlint to ensure commit messages follow our standards
+# 2. Release management is handled by GitHub Actions, not this hook
+
+# Run commitlint
+npx --no -- commitlint --edit "${1}"

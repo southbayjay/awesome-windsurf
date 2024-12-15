@@ -1,15 +1,9 @@
 #!/usr/bin/env sh
 
-# Generate changelog
-npx auto-changelog
+# This hook runs pre-push validations
+# Logic:
+# 1. Add any pre-push checks here
+# Note: Changelog management is now handled by GitHub Actions
 
-# Stage the changelog
-git add CHANGELOG.md
-
-# Check if there are changes to commit
-if git diff --staged --quiet; then
-  echo "✨ No changes to CHANGELOG.md"
-else
-  # Commit the changelog changes
-  git commit -m "update: update changelog [skip ci]"
-fi
+# Example: You could add tests here
+# npm test

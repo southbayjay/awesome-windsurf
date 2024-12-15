@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# This hook runs linting and handles version bumps
+# Logic:
+# 1. Runs lint-staged to format files
+# 2. Special handling for version bumps:
+#    - Detects if package.json version changed
+#    - If yes, skips additional checks
+#    - Allows release commits to proceed smoothly
+
 # Run lint-staged first to ensure files are properly formatted
 npx lint-staged
 

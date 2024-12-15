@@ -56,6 +56,8 @@ Want to contribute? Create a directory with your username and add your prompts! 
 ## Tips and Tricks
 
 1. When working on a Markdown file, use ⌘/CTRL + K, then I to open formatted Markdown to the side.
+2. If you suspect that Windsurf is not respecting your [rules](https://docs.codeium.com/windsurf/cascade#memories), just ask Cascade "check your guidelines and revise your suggestion" or similar.
+3. Don't run your chats forever. Windsurf will start feeling queasy and you'll likely have to reload the window. You can also wait until Windsurf starts acting weird, then reload the window. Up to you.
 
 ## Known Issues
 

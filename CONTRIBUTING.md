@@ -84,6 +84,34 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    - You don't need to edit the CHANGELOG.md file manually
    - For releases, add the 'release' label to your PR to create a version tag
 
+## Releases and Versioning
+
+We use Calendar Versioning (CalVer) with the format `YYYY.MM.PATCH`. Releases are managed entirely through GitHub Actions to ensure consistency:
+
+### Automated Releases
+
+A GitHub Action monitors changes and automatically proposes releases when:
+
+- More than 5 files have changed since last release, or
+- More than 10 commits have been made since last release
+
+The Action will:
+
+1. Calculate the next version number
+2. Update package.json
+3. Generate the changelog
+4. Create a PR with all changes
+
+### Manual Releases
+
+To manually trigger a release:
+
+1. Create a new PR
+2. Use "release:" in the PR title (e.g., "release: add new feature X")
+3. The same GitHub Action will handle version bumping and changelog updates
+
+All releases go through PRs and the merge queue, ensuring proper review and consistency.
+
 ## Contributing Prompts
 
 For detailed information about contributing prompts, including:
