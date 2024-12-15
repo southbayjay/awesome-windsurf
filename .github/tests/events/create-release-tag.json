@@ -4,12 +4,15 @@
     "merged": false,
     "head": {
       "sha": "0a97d696",
-      "ref": "feature/test-changes"
+      "ref": "feature/manual-release",
+      "commit": {
+        "message": "release: prepare for version 2024.12.9"
+      }
     },
     "base": {
       "ref": "main"
     },
-    "title": "feat: add multiple test files",
+    "title": "release: prepare for version 2024.12.9",
     "labels": []
   },
   "repository": {
