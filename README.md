@@ -2,7 +2,6 @@
 
 [![Join us on Discord](https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB)](https://discord.gg/3XFf78nAx5)
 [![GitHub Actions](https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
-[![Changelog](https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/changelog.yml/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-58E5BB.svg)](CONTRIBUTING.md)
 [![Contributors](https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882)](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors)
 [![Maintained](https://img.shields.io/badge/Maintained-yes-58E5BB.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
@@ -15,16 +14,16 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 ## Contents
 
-- [Please Read](#please-read)
+- [Please Read & Useful Links](#please-read--useful-links)
 - [Community Prompts](#community-prompts)
 - [Known Issues](#known-issues)
 - [Tips and Tricks](#tips-and-tricks)
-- [Themes](#themes)
 - [Videos](#videos)
+- [Contributing](#contributing)
 - [FAQ](#faq)
 - [License](#license)
 
-## Please Read
+## Please Read & Useful Links
 
 **This is not an official Codeium repository.** For official documentation and support, please visit:
 
@@ -32,17 +31,18 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Codeium Support](https://codeium.com/support)
 - [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
 - [Codeium Changelog](https://codeium.com/changelog)
+- [Codeium Subreddit](https://www.reddit.com/r/Codeium/)
 
 ## Community Prompts
 
-This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `prompts/` to maintain organization:
+This repository includes a collection of community-contributed prompts that enhance Windsurf's capabilities. Each contributor has their own directory under `memories/` to maintain organization:
 
 ### Current Contributors
 
-- [@computerk](prompts/computerk/)
-  - [Global Rules](prompts/computerk/global-rules.md) - A comprehensive set of coding guidelines
+- [@computerk](memories/computerk/)
+  - [Global Rules](memories/computerk/global-rules.md) - A comprehensive set of coding guidelines
 
-Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](CONTRIBUTING.md) section for more details.
+Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
 
 ## Tips and Tricks
 
@@ -54,39 +54,24 @@ Want to contribute? Create a directory with your username and add your prompts! 
 | Accept/Reject buttons become unresponsive | Chat has probably gotten too long | Reload window and start new chat |
 | Diff view does not work | Chat has probably gotten too long | Reload window and start new chat |
 
-## Themes
+## Contributing
 
-### Default Themes
+Want to contribute? Great! Please check our [contributing guidelines](CONTRIBUTING.md) for details on how to add your contributions.
 
-Coming soon - Share your favorite themes with the community!
+## FAQ
+
+**What is Windsurf?**
+Windsurf is an AI-native code editor created by Codeium that integrates advanced AI capabilities directly into your development workflow. It's designed to enhance productivity through natural language interaction and intelligent code assistance.
+
+**How do I install Windsurf?**
+Visit the [official Windsurf documentation](https://docs.codeium.com/windsurf/getting-started) for detailed installation instructions and system requirements.
+
+**Where can I find community support and resources?**
+Join our community on [Discord](https://discord.gg/3XFf78nAx5) (badge above) or visit the [Codeium Subreddit](https://www.reddit.com/r/Codeium/) for discussions, support, and sharing resources with other Windsurf users.
 
 ## Videos
 
 [![Windsurf: The Enterprise AI IDE](https://img.youtube.com/vi/VcUl0vPJwxo/0.jpg)](https://www.youtube.com/watch?v=VcUl0vPJwxo)
-
-## FAQ
-
-### What is Windsurf?
-
-Windsurf is an AI-native code editor created by Codeium that integrates advanced AI capabilities directly into your development workflow. It's designed to enhance productivity through natural language interaction and intelligent code assistance.
-
-### How do I install Windsurf?
-
-Visit the [official Windsurf documentation](https://docs.codeium.com/windsurf/getting-started) for detailed installation instructions and system requirements.
-
-### Is Windsurf free to use?
-
-Please check the [official Codeium pricing page](https://codeium.com/pricing) for current pricing and plans.
-
-### How can I report bugs or request features?
-
-- For bug reports and general support: [Codeium Support](https://codeium.com/support)
-- For feature requests: [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
-- For community discussions join the [Discord server](https://discord.gg/3XFf78nAx5)
-
-### How do I contribute to this repository?
-
-Check out our [Contributing Guidelines](CONTRIBUTING.md) for information on how to add prompts, tips, or other resources to this repository.
 
 ## License
 
