@@ -1,4 +1,4 @@
-1. The CHANGELOG.md is automatically updated through auto-changelog when pull requests are merged.
+1. The CHANGELOG.md is automatically updated via our pre-push husky hook.
 2. This is a public repository, so please be respectful of others and make sure the content makes sense to others.
 3. We have access to the Github CLI via the gh command. We are already authenticated.
 4. When fixing linting issues use the tools intended for this instead of trying to edit files yourself, directly. You can see which tools we have in package.json.
