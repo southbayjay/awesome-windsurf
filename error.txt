@@ -40,3 +40,45 @@ FILE: ./memories/README.md
 FILE: ./memories/computerk/global-rules.md
 
 0 links checked.
+(node:19) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./CHANGELOG.md
+
+17 links checked.
+(node:30) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./TESTING.md
+
+2 links checked.
+(node:41) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./README.md
+
+39 links checked.
+(node:52) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./CONTRIBUTING.md
+
+4 links checked.
+(node:63) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./.github/tests/README.md
+
+0 links checked.
+(node:74) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./memories/README.md
+
+3 links checked.
+(node:85) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+FILE: ./memories/computerk/global-rules.md
+
+0 links checked.
