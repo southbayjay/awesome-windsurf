@@ -42,7 +42,7 @@
     "*.js": [
       "eslint"
     ],
-    "*.json": [
+    "!(.windsurfrules)*.json": [
       "jsonlint -q"
     ],
     "*.{yml,yaml}": [
