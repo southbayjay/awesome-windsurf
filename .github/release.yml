@@ -7,16 +7,15 @@ changelog:
     authors:
       - dependabot
   categories:
-    - title: 📚 Documentation Updates
+    - title: 📚 Content Changes
       labels:
         - documentation
         - docs
         - guide
-    - title: 🤝 Community Resources
-      labels:
-        - community
         - examples
         - tutorial
+        - community
+        - content
     - title: 🛠 Repository Improvements
       labels:
         - enhancement
