@@ -1,0 +1,110 @@
+# This workflow is the single source of truth for version management.
+# It handles:
+# 1. Version bumping (YYYY.MM.PATCH format)
+# 2. Changelog generation
+# 3. Release PR creation
+#
+# Triggers:
+# - Manual: Create PR with title "release: your message"
+# - Auto: When changes exceed thresholds (>5 files or >10 commits)
+#
+# Note: All version management is handled here, not in local hooks.
+# This ensures consistency across all contributors.
+
+name: Auto Release
+
+on:
+  pull_request:
+    types: [opened, reopened, edited]
+    branches: [main, feature/update]
+  schedule:
+    - cron: '0 0 * * *'  # Run daily to check for needed releases
+
+jobs:
+  check-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check if release is needed
+        id: check-release
+        run: |
+          # Get current version
+          CURRENT_VERSION=$(npm pkg get version | tr -d '"')
+          YEAR_MONTH=$(date '+%Y.%m')
+          
+          if [[ $CURRENT_VERSION == $YEAR_MONTH* ]]; then
+            CURRENT_PATCH=$(echo $CURRENT_VERSION | cut -d. -f3)
+            NEXT_PATCH=$((CURRENT_PATCH + 1))
+          else
+            NEXT_PATCH=1
+          fi
+          
+          NEW_VERSION="$YEAR_MONTH.$NEXT_PATCH"
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+          # Check if this is a release PR
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            PR_TITLE="${{ github.event.pull_request.title }}"
+            if [[ $PR_TITLE == release:* ]]; then
+              echo "release_needed=true" >> $GITHUB_OUTPUT
+              echo "release_type=manual" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+          fi
+
+          # Check thresholds
+          FILES_CHANGED=$(git diff --name-only $(git describe --tags --abbrev=0)..HEAD | wc -l)
+          COMMITS_SINCE_TAG=$(git rev-list --count $(git describe --tags --abbrev=0)..HEAD)
+
+          if [ $FILES_CHANGED -gt 5 ] || [ $COMMITS_SINCE_TAG -gt 10 ]; then
+            echo "release_needed=true" >> $GITHUB_OUTPUT
+            echo "release_type=auto" >> $GITHUB_OUTPUT
+          else
+            echo "release_needed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update version and changelog
+        if: steps.check-release.outputs.release_needed == 'true'
+        run: |
+          # Update package.json
+          npm version ${{ steps.check-release.outputs.new_version }} --no-git-tag-version
+          
+          # Generate changelog
+          npx auto-changelog --package
+          
+          # Create branch and commit changes
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          BRANCH="release-v${{ steps.check-release.outputs.new_version }}"
+          git checkout -b $BRANCH
+          
+          git add package.json CHANGELOG.md
+          git commit -m "release: Bump version to v${{ steps.check-release.outputs.new_version }}"
+          git push origin $BRANCH
+
+          # Create PR if it doesn't exist
+          if [[ "${{ steps.check-release.outputs.release_type }}" == "auto" ]]; then
+            gh pr create \
+              --title "release: Automated version bump to v${{ steps.check-release.outputs.new_version }}" \
+              --body "Automated release due to significant changes since last release." \
+              --base main \
+              --head $BRANCH
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
