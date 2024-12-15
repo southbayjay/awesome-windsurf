@@ -6,29 +6,48 @@ name: Create Release Tag
 
 on:
   pull_request:
-    types: [closed]
+    types: [opened, reopened, edited]
     branches: [main]
 
 jobs:
   create-tag:
-    # Only run this job if the PR was merged and has 'release:' in the title
-    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, 'release:')
     runs-on: ubuntu-latest
+    if: startsWith(github.event.pull_request.title, 'release:')
     permissions:
       contents: write
-
+      pull-requests: write
+    
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Create and push tag
+      - name: Get version from PR title
+        id: version
         run: |
-          # Get version from package.json
-          VERSION=$(npm pkg get version | tr -d '"')
-          
-          # Create annotated tag
-          git tag -a $VERSION -m "Release $VERSION"
-          git push origin $VERSION
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          # Extract version after "release:" prefix
+          VERSION=$(echo "$PR_TITLE" | sed 's/^release: *//i')
+          # Validate CalVer format (YYYY.MM.PATCH)
+          if [[ ! $VERSION =~ ^[0-9]{4}\.[0-9]{2}\.[0-9]+$ ]]; then
+            echo "Invalid version format. Must be YYYY.MM.PATCH"
+            exit 1
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Update package.json version
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          npm version $VERSION --no-git-tag-version
+
+      - name: Create Pull Request comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const version = "${{ steps.version.outputs.version }}"
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✨ Version \`${version}\` will be created when this PR is merged.`
+            })
