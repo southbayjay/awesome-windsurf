@@ -1,0 +1,34 @@
+# This workflow creates git tags when release PRs are merged.
+# It ensures that each release has a corresponding git tag,
+# making it easier to track versions and generate changelogs.
+
+name: Create Release Tag
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  create-tag:
+    # Only run this job if the PR was merged and has 'release:' in the title
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, 'release:')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create and push tag
+        run: |
+          # Get version from package.json
+          VERSION=$(npm pkg get version | tr -d '"')
+          
+          # Create annotated tag
+          git tag -a $VERSION -m "Release $VERSION"
+          git push origin $VERSION
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
