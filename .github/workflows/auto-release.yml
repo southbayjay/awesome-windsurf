@@ -15,8 +15,8 @@ name: Auto Release
 
 on:
   pull_request:
-    types: [opened, reopened, edited]
-    branches: [main, feature/update]
+    types: [opened, closed]
+    branches: [main]
   schedule:
     - cron: '0 0 * * *'  # Run daily to check for needed releases
 
@@ -108,3 +108,21 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create tag and release
+        if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, 'release:')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get version from package.json
+          VERSION=$(npm pkg get version | tr -d '"')
+          
+          # Create and push tag
+          git tag -a $VERSION -m "Release $VERSION"
+          git push origin $VERSION
+          
+          # Create GitHub Release with auto-generated notes
+          gh release create $VERSION \
+            --title "Release $VERSION" \
+            --generate-notes \
+            --target main
