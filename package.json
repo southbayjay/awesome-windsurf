@@ -7,12 +7,14 @@
     "@commitlint/cli": "^19.6.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
-    "markdownlint-cli2": "^0.16.0"
+    "markdownlint-cli2": "^0.16.0",
+    "markdown-link-check": "^3.13.6"
   },
   "scripts": {
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "check-links": "find . -name '*.md' -not -path './node_modules/*' -print0 | xargs -0 -n1 markdown-link-check -c .markdown-link-check.json"
   },
   "lint-staged": {
-    "*.md": "markdownlint-cli2"
+    "*.md": ["markdownlint-cli2", "markdown-link-check -c .markdown-link-check.json"]
   }
 }
