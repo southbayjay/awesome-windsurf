@@ -58,7 +58,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    - `git commit -m "remove: remove old documentation"`
    - `git commit -m "fix: correct typos in README"`
    - `git commit -m "meta: update commitlint configuration"`
-   - `git commit -m "release: bump version to v2024.12.4"`
+   - `git commit -m "release: added significant new section X"`
 
 6. Push to your fork:
 
