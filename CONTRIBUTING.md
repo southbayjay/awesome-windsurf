@@ -79,58 +79,19 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    - It's also enforced by the pre-commit hook
    - You can run checks manually using `npx markdownlint-cli2 "**/*.md"`
 
-3. **Changelog**: Changes are automatically tracked
-   - We use [auto-changelog](https://github.com/CookPete/auto-changelog) to generate our CHANGELOG.md
-   - The changelog is automatically generated from your commit messages
-   - You don't need to edit the CHANGELOG.md file manually
-   - For releases, add the 'release' label to your PR to create a version tag
+3. **Release Notes**: Changes are automatically tracked
+   - Release notes are generated automatically by GitHub
+   - You don't need to manually maintain any changelog
+   - Changes are categorized automatically based on commit types and PR content
 
 ## Release Process
 
-Our releases are managed through an automated GitHub workflow that monitors changes and creates releases when significant updates occur. Every merge to the `main` branch results in a release, ensuring that the public repository always reflects released versions.
+Our releases are managed through GitHub's native release system. PRs can only be merged to `main` through our merge queue when they are ready for release. This is enforced by requiring either:
 
-### Merging to Main
-
-PRs can only be merged to `main` when they are ready for release. This is enforced by requiring either:
-
-- The `version-bump` label (added automatically when changes are significant), or
+- The `version-bump` label (added automatically for significant changes), or
 - A commit message starting with `release:`
 
-This ensures that all changes in the public repository are properly versioned and released.
-
-### Automatic Releases
-
-A new release is automatically created when:
-
-- More than 5 files are changed in a PR, or
-- More than 10 commits have been made since the last release
-
-### Manual Releases
-
-You can trigger a release manually by including a commit with a message that starts with `release:` followed by a description of your changes:
-
-```bash
-git commit -m "release: major update to custom prompts section"
-```
-
-The version number will be calculated automatically based on the current date (YYYY.MM) and incrementing the patch number from the last release.
-
-### Release Process
-
-The workflow will:
-
-1. Calculate the next version number using Calendar Versioning (YYYY.MM.PATCH)
-2. Update package.json with the new version
-3. Add a comment to your PR with the upcoming version
-4. Add the `version-bump` label to your PR
-
-When the PR is merged:
-
-- A new git tag is created
-- A GitHub release is published
-- Release notes are automatically generated
-
-Note: All changes are merged through our merge queue for additional safety, as direct pushes to main are not allowed.
+Note: All version management and releases are handled entirely by GitHub Actions. This ensures consistency across all contributors.
 
 ## Contributing Prompts
 

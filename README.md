@@ -44,13 +44,6 @@ To explore and discover community contributions:
 1. Browse the [`memories/`](memories/) directory to explore prompt contributions
 2. Check the [GitHub contributors page](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors) to see everyone who has helped this project
 
-### Recent Examples
-
-This is a rotating selection of recent contributions from the community.
-
-- [@computerk](memories/computerk/) - Global coding guidelines
-- [@fridaystreet](memories/fridaystreet/) - Rules file optimization insights
-
 Want to contribute? Create a directory with your username and add your prompts! See the [Contributing](#contributing) section for more details.
 
 ## Tips and Tricks
