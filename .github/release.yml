@@ -7,25 +7,12 @@ changelog:
     authors:
       - dependabot
   categories:
-    - title: 📚 Content Changes
+    - title: 📚 Content
       labels:
-        - documentation
-        - docs
-        - guide
-        - examples
-        - tutorial
-        - community
         - content
-    - title: 🛠 Repository Improvements
+    - title: 🛠 Maintenance
       labels:
-        - enhancement
-        - automation
-        - workflow
-    - title: 🐛 Fixes
-      labels:
-        - bug
-        - fix
-        - hotfix
+        - meta
     - title: Other Changes
       labels:
         - "*"
