@@ -4,6 +4,7 @@
 # 2. Uses markdownlint-cli2 (same as local)
 # 3. Attempts to auto-fix issues and commits them
 # 4. If fixes aren't possible, fails the check
+# 5. Also runs spell checking and code block validation
 
 name: Markdown Lint
 
@@ -27,6 +28,10 @@ jobs:
       - run: npm ci
       - name: Fix markdown
         run: npm run fix:md
+      - name: Check spelling
+        run: npm run spell-check
+      - name: Check code blocks
+        run: npm run check-codeblocks
       - name: Commit fixes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
