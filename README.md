@@ -58,6 +58,14 @@ Want to contribute? Create a directory with your username and add your prompts! 
 1. When working on a Markdown file, use ⌘/CTRL + K, then I to open formatted Markdown to the side.
 2. If you suspect that Windsurf is not respecting your [rules](https://docs.codeium.com/windsurf/cascade#memories), just ask Cascade "check your guidelines and revise your suggestion" or similar.
 3. Don't run your chats forever. Windsurf will start feeling queasy and you'll likely have to reload the window. You can also wait until Windsurf starts acting weird, then reload the window. Up to you.
+4. **Caveats**
+
+- Be CAREFUL. Windsurf is smart as hell but it's not AGI.
+- It will miss stuff.
+- It will make mistakes.
+- Don't trust it blindly.
+- Keep an eye on your **Problems** panel at the bottom.
+- Arguably, it's even more important to have very solid testing code in place when using AI coding tools.
 
 ## Known Issues
 

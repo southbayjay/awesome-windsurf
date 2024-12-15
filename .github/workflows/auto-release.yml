@@ -1,17 +1,22 @@
-# This workflow manages all release-related tasks:
-# 1. Handles version bumping (YYYY.MM.PATCH format)
-# 2. Updates changelog
-# 3. Creates release PRs
+# This workflow is the single source of truth for version management.
+# It handles:
+# 1. Version bumping (YYYY.MM.PATCH format)
+# 2. Changelog generation
+# 3. Release PR creation
 #
 # Triggers:
-# - Manual: When PR title starts with "release:"
+# - Manual: Create PR with title "release: your message"
 # - Auto: When changes exceed thresholds (>5 files or >10 commits)
+#
+# Note: All version management is handled here, not in local hooks.
+# This ensures consistency across all contributors.
 
 name: Auto Release
 
 on:
   pull_request:
     types: [opened, reopened, edited]
+    branches: [main, feature/update]
   schedule:
     - cron: '0 0 * * *'  # Run daily to check for needed releases
 

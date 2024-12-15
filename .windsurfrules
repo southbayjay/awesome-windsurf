@@ -4,3 +4,4 @@
 4. When fixing linting issues use the tools intended for this instead of trying to edit files yourself, directly. You can see which tools we have in package.json.
 5. When committing, put quotes around your commit message. Also, it's a good practice to format commit messages with a type and description. The correct format should be: type: description.
 6. The main branch is protected and we cannot push directly to it. We use the merge queue to merge our PRs.
+7. Regarding all the automation we have here.. we do all of it to make contributing to this repository as easy and smooth as possible. We don't do it to arbitrarily add complexity.

@@ -124,32 +124,21 @@ Please see [memories/README.md](memories/README.md).
 
 ## Git Hooks
 
-This project uses several git hooks to maintain code quality:
+We use [husky](https://github.com/typicode/husky) to manage our Git hooks. These hooks ensure code quality and consistency:
 
-1. **pre-commit**: Runs markdownlint-cli2 to ensure markdown files follow our style guidelines
-2. **commit-msg**: Uses commitlint to enforce our documentation commit convention:
+### commit-msg
 
-   ```txt
-   Types:
-   - add: Add new documentation
-   - update: Update existing documentation
-   - remove: Remove documentation
-   - fix: Fix typos, formatting, or broken links
-   - meta: Changes to the repository itself
+- Validates commit message format
+- Ensures messages follow pattern: `type: description`
+- Valid types: `add`, `update`, `remove`, `fix`, `meta`
 
-   Examples:
-   - add: create guide for windsurf setup
-   - update: improve clarity of installation steps
-   - fix: correct typos in README
-   ```
+### pre-commit
 
-3. **pre-push**: Automatically updates the CHANGELOG.md using auto-changelog, which:
-   - Generates a clean, standardized changelog based on commit history
-   - Maintains an "Unreleased" section for upcoming changes
-   - Follows Calendar Versioning (YYYY.MM.MINOR)
-   - Groups changes into categories (Merged, Fixed, Commits)
+- Runs linting checks via lint-staged
+- Ensures code style consistency
+- Validates markdown files
 
-These hooks will automatically run when you commit or push changes. If a hook fails, it will provide feedback on what needs to be fixed.
+Note: All version management, changelog updates, and releases are handled entirely by GitHub Actions through our auto-release workflow, not local hooks. This ensures consistency across all contributors.
 
 ## Need Help?
 
