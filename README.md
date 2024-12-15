@@ -21,8 +21,9 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Tips and Tricks](#tips-and-tricks)
 - [Themes](#themes)
 - [Videos](#videos)
-- [Contributing](#contributing)
+- [FAQ](#faq)
 - [License](#license)
+- [Contributing](#contributing)
 
 ## Please Read
 
@@ -64,9 +65,40 @@ Coming soon - Share your favorite themes with the community!
 
 [![Windsurf: The Enterprise AI IDE](https://img.youtube.com/vi/VcUl0vPJwxo/0.jpg)](https://www.youtube.com/watch?v=VcUl0vPJwxo)
 
+## FAQ
+
+### What is Windsurf?
+
+Windsurf is an AI-native code editor created by Codeium that integrates advanced AI capabilities directly into your development workflow. It's designed to enhance productivity through natural language interaction and intelligent code assistance.
+
+### How do I install Windsurf?
+
+Visit the [official Windsurf documentation](https://docs.codeium.com/windsurf/getting-started) for detailed installation instructions and system requirements.
+
+### Is Windsurf free to use?
+
+Please check the [official Codeium pricing page](https://codeium.com/pricing) for current pricing and plans.
+
+### How can I report bugs or request features?
+
+- For bug reports and general support: [Codeium Support](https://codeium.com/support)
+- For feature requests: [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
+- For community discussions join the [Discord server](https://discord.gg/3XFf78nAx5)
+
+### How do I contribute to this repository?
+
+Check out our [Contributing Guidelines](CONTRIBUTING.md) for information on how to add prompts, tips, or other resources to this repository.
+
 ## Contributing
 
-Want to contribute? Great! Please check our [contributing guidelines](CONTRIBUTING.md) for details on how to add your contributions.
+We welcome contributions! To contribute:
+
+1. Fork the repository
+2. Create a new directory with your username
+3. Add your prompts and documentation
+4. Submit a pull request
+
+Please ensure your contributions follow our guidelines and are well-documented.
 
 ## License
 
