@@ -34,7 +34,8 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 ## Contents
 
-- [Please Read & Useful Links](#please-read--useful-links)
+- [Please Read](#please-read)
+- [Useful Links](#useful-links)
 - [Community Prompts](#community-prompts)
 - [Known Issues](#known-issues)
 - [Tips and Tricks](#tips-and-tricks)
@@ -43,7 +44,7 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [FAQ](#faq)
 - [License](#license)
 
-## Please Read & Useful Links
+## Please Read
 
 **This is not an official Codeium repository.** For official documentation and support, please visit:
 
@@ -52,6 +53,14 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
 - [Codeium Changelog](https://codeium.com/changelog)
 - [Codeium Subreddit](https://www.reddit.com/r/Codeium/)
+
+## Useful Links
+
+### MCP Servers
+
+- [Pulse](https://www.pulsemcp.com/)
+- [mcpservers.org](https://www.mcpservers.org/)
+- [mcpservers.ai](https://www.mcpservers.ai/)
 
 ## Community Prompts
 
