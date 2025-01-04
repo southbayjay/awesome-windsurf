@@ -56,6 +56,10 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 ## Useful Links
 
+### Community Resources
+
+- [awesome-windsurfrules](https://github.com/SchneiderSam/awesome-windsurfrules) - A complementary collection of Windsurf rules and guidelines
+
 ### MCP Servers
 
 - [Pulse](https://www.pulsemcp.com/)
