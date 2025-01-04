@@ -1,20 +1,41 @@
-# [![Windsurf Logo](windsurf_logo_wordmark.png)](https://www.codeium.com/windsurf)
+# [![Windsurf Logo](windsurf_logo_wordmark.png)][windsurf-link]
 
-[![Join us on Discord](https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB)](https://discord.gg/3XFf78nAx5)
-[![GitHub Actions](https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-58E5BB.svg)](CONTRIBUTING.md)
-[![Contributors](https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882)](https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors)
-[![Maintained](https://img.shields.io/badge/Maintained-yes-58E5BB.svg)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
-[![Last Commit](https://img.shields.io/github/last-commit/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/ichoosetoaccept/awesome-windsurf?color=58E5BB)](https://github.com/ichoosetoaccept/awesome-windsurf)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-E55882.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![GitHub stars](https://img.shields.io/github/stars/ichoosetoaccept/awesome-windsurf?style=social)](https://github.com/ichoosetoaccept/awesome-windsurf/stargazers)
+[![Join us on Discord][discord-shield]][discord-link]
+[![GitHub Actions][actions-shield]][actions-link]
+[![PRs Welcome][prs-shield]][contributing-link]
+[![Contributors][contributors-shield]][contributors-link]
+[![Maintained][maintained-shield]][maintained-link]
+[![Last Commit][lastcommit-shield]][lastcommit-link]
+[![GitHub repo size][reposize-shield]][repo-link]
+[![License: CC0-1.0][license-shield]][license-link]
+[![GitHub stars][stars-shield]][stars-link]
+
+[windsurf-link]: https://www.codeium.com/windsurf
+[discord-shield]: https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB
+[discord-link]: https://discord.gg/3XFf78nAx5
+[actions-shield]: https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg
+[actions-link]: https://github.com/ichoosetoaccept/awesome-windsurf/actions
+[prs-shield]: https://img.shields.io/badge/PRs-welcome-58E5BB.svg
+[contributing-link]: CONTRIBUTING.md
+[contributors-shield]: https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882
+[contributors-link]: https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors
+[maintained-shield]: https://img.shields.io/badge/Maintained-yes-58E5BB.svg
+[maintained-link]: https://github.com/ichoosetoaccept/awesome-windsurf/commits/main
+[lastcommit-shield]: https://img.shields.io/github/last-commit/ichoosetoaccept/awesome-windsurf?color=58E5BB
+[lastcommit-link]: https://github.com/ichoosetoaccept/awesome-windsurf/commits/main
+[reposize-shield]: https://img.shields.io/github/repo-size/ichoosetoaccept/awesome-windsurf?color=58E5BB
+[repo-link]: https://github.com/ichoosetoaccept/awesome-windsurf
+[license-shield]: https://img.shields.io/badge/License-CC0_1.0-E55882.svg
+[license-link]: http://creativecommons.org/publicdomain/zero/1.0/
+[stars-shield]: https://img.shields.io/github/stars/ichoosetoaccept/awesome-windsurf?style=social
+[stars-link]: https://github.com/ichoosetoaccept/awesome-windsurf/stargazers
 
 A curated hub of resources, tips, and community-driven content for Windsurf - a very nice agentic IDE made by [Codeium](https://codeium.com).
 
 ## Contents
 
-- [Please Read & Useful Links](#please-read--useful-links)
+- [Please Read](#please-read)
+- [Useful Links](#useful-links)
 - [Community Prompts](#community-prompts)
 - [Known Issues](#known-issues)
 - [Tips and Tricks](#tips-and-tricks)
@@ -23,7 +44,7 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [FAQ](#faq)
 - [License](#license)
 
-## Please Read & Useful Links
+## Please Read
 
 **This is not an official Codeium repository.** For official documentation and support, please visit:
 
@@ -32,6 +53,18 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 - [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
 - [Codeium Changelog](https://codeium.com/changelog)
 - [Codeium Subreddit](https://www.reddit.com/r/Codeium/)
+
+## Useful Links
+
+### Community Resources
+
+- [awesome-windsurfrules](https://github.com/SchneiderSam/awesome-windsurfrules) - A complementary collection of Windsurf rules and guidelines
+
+### MCP Servers
+
+- [Pulse](https://www.pulsemcp.com/)
+- [mcpservers.org](https://www.mcpservers.org/)
+- [mcpservers.ai](https://www.mcpservers.ai/)
 
 ## Community Prompts
 
@@ -91,7 +124,9 @@ Join our community on [Discord](https://discord.gg/3XFf78nAx5) (badge above) or 
 
 ## Videos
 
-[![Windsurf: The Enterprise AI IDE](https://img.youtube.com/vi/VcUl0vPJwxo/0.jpg)](https://www.youtube.com/watch?v=VcUl0vPJwxo)
+[![Windsurf: The Enterprise AI IDE](https://img.youtube.com/vi/VcUl0vPJwxo/0.jpg)][video-link]
+
+[video-link]: https://www.youtube.com/watch?v=VcUl0vPJwxo
 
 ## License
 

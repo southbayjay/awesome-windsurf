@@ -11,3 +11,5 @@ Before creating new branches, always check which branch we're currently working 
 Never say something without being certain. Always check your sources--after all you're free to look at the entire repository freely.
 Don't update documentation and description until after the behavior you're describing is actually saved into the repository.
 Always double check your changes before committing, pushing and ESPECIALLY before creating PRs.
+Remember that commit type must be one of [add, update, remove, fix, meta, release] [type-enum]
+When we discuss larger tasks, ask if we should create a detailed Github issue for it so we can track it.

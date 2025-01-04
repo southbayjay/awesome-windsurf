@@ -24,9 +24,10 @@ jobs:
       - name: Check if release needed
         id: check
         run: |
-          # Check for manual release commit
+          # Check for manual release in PR title or commit message
+          PR_TITLE="${{ github.event.pull_request.title }}"
           LAST_COMMIT_MSG=$(git log -1 --pretty=%B)
-          if [[ "$LAST_COMMIT_MSG" =~ ^release: ]]; then
+          if [[ "$PR_TITLE" =~ ^release: ]] || [[ "$LAST_COMMIT_MSG" =~ ^release: ]]; then
             echo "should_release=true" >> $GITHUB_OUTPUT
             echo "is_manual_release=true" >> $GITHUB_OUTPUT
             exit 0

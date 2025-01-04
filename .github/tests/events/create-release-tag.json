@@ -1,0 +1,25 @@
+{
+  "pull_request": {
+    "number": 44,
+    "merged": false,
+    "head": {
+      "sha": "0a97d696",
+      "ref": "feature/manual-release",
+      "commit": {
+        "message": "release: prepare for version 2024.12.9"
+      }
+    },
+    "base": {
+      "ref": "main"
+    },
+    "title": "release: prepare for version 2024.12.9",
+    "labels": []
+  },
+  "repository": {
+    "name": "awesome-windsurf",
+    "owner": {
+      "login": "ichoosetoaccept"
+    }
+  },
+  "action": "opened"
+}

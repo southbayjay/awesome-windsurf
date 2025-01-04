@@ -14,7 +14,8 @@
     "calver",
     "ichoosetoaccept",
     "cdefecc",
-    "RAII"
+    "RAII",
+    "mcpservers"
   ],
   "ignorePaths": [
     "node_modules/**",

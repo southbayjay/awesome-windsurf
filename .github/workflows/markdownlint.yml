@@ -21,6 +21,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check markdown
+        uses: DavidAnson/markdownlint-cli2-action@v13
+        with:
+          globs: '**/*.md'
+          config: '.markdownlint-cli2.jsonc'  # Use our configuration file
+        env:
+          GITHUB_WORKSPACE: /Users/ismar/repos/awesome-windsurf  # Set the workspace path
+
+  fix-and-check:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'  # Only run on pull requests
+    needs: markdownlint  # Run after basic linting passes
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -35,9 +51,5 @@ jobs:
       - name: Commit fixes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto-fix markdown formatting"
-          file_pattern: "*.md"
-      - name: Check remaining issues
-        uses: DavidAnson/markdownlint-cli2-action@v13
-        with:
-          globs: '**/*.md'
+          commit_message: "fix: auto-fix markdown formatting"
+          file_pattern: "**/*.md"
