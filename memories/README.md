@@ -16,17 +16,21 @@ Read about this [here](https://docs.codeium.com/windsurf/cascade#memories).
 ```text
 memories/
 ├── your-username/
-│   └── README.md (required)
-│   └── global-rules.md (optional)
-│   └── .windsurfrules (optional)
-│   └── your-prompt.md (optional)
-│   └── your-prompt-2.md (optional)
+│   ├── README.md (required)
+│   ├── Global-AI-rules/
+│   │   ├── global-rules-1.md (optional)
+│   │   └── global-rules-2.md (optional)
+│   └── Workspace-AI-rules/
+│       ├── .windsurfrules (optional)
+│       └── your-prompt-2.md (optional)
 ├── another-username/
-│   └── README.md (required)
-│   └── global-rules.md (optional)
-│   └── .windsurfrules (optional)
-│   └── their-prompt.md (optional)
-│   └── their-prompt-2.md (optional)
+│   ├── README.md (required)
+│   ├── Global-AI-rules/
+│   │   ├── global-rules-1.md (optional)
+│   │   └── global-rules-2.md (optional)
+│   └── Workspace-AI-rules/
+│       ├── .windsurfrules (optional)
+│       └── their-prompt-2.md (optional)
 └── README.md (what you're reading now)
 ```
 
