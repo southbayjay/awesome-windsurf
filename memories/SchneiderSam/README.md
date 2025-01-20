@@ -17,4 +17,4 @@ Global rules are essential for maintaining consistency and clarity across my pro
 
 I love consistent commit messages, and sometimes I write in German; I know I have to be consistent and learn to write only in English, but hey, I am learning, and sometimes Windsurf outputs the commit messages in German, so with these global rules, it works really well.
 
-Just follow [these rules](https://docs.codeium.com/windsurf/memories) and you will have a lot of fun.
+Just follow [this documentation](https://docs.codeium.com/windsurf/memories) and copy these rules to your own Windsurf environment.
