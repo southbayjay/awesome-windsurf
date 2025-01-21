@@ -19,7 +19,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 2. Follow the existing style and format of the repository
 3. Keep descriptions clear and concise
 4. Test any code or commands before submitting
-5. Follow our [testing guidelines](TESTING.md) for quality assurance
+5. Follow our [quality check guidelines](CHECKS.md) for consistency
 
 ## How to contribute
 
@@ -90,7 +90,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 
 All code quality checks (formatting, linting, link checking) are automatically run when you commit changes through our pre-commit hooks. Just make your changes and commit - the hooks will ensure everything is properly formatted and validated.
 
-For testing GitHub Actions workflows locally, see [TESTING.md](TESTING.md).
+For GitHub Actions workflow details, see [CHECKS.md](CHECKS.md).
 
 ## Release Process
 
