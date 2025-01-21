@@ -3,6 +3,7 @@ Write a short english commit message (maximum one sentence) for every change you
 prefix: short description (maximum one sentence)
 
 Commit Prefixes:
+
 - feat: Introduce a new feature.
 - fix: Fix a bug or issue.
 - tweak: Make minor adjustments or improvements.
