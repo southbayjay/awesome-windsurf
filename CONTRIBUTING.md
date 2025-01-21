@@ -81,12 +81,16 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 
    - This is automatically checked by GitHub Actions
    - It's also enforced by the pre-commit hook
-   - You can run checks manually using `npx markdownlint-cli2 "**/*.md"`
 
 3. **Release Notes**: Changes are automatically tracked
    - Release notes are generated automatically by GitHub
-   - You don't need to manually maintain any changelog
    - Changes are categorized automatically based on commit types and PR content
+
+## Development
+
+All code quality checks (formatting, linting, link checking) are automatically run when you commit changes through our pre-commit hooks. Just make your changes and commit - the hooks will ensure everything is properly formatted and validated.
+
+For testing GitHub Actions workflows locally, see [TESTING.md](TESTING.md).
 
 ## Release Process
 
