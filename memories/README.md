@@ -13,24 +13,40 @@ Read about this [here](https://docs.codeium.com/windsurf/cascade#memories).
 
 ## Directory Structure
 
-```text
+``` text
 memories/
 ├── your-username/
 │   ├── README.md (required)
 │   ├── Global-AI-rules/
-│   │   ├── global-rules-1.md (optional)
-│   │   └── global-rules-2.md (optional)
+│   │   ├── global-rules-1/
+│   │   │   ├── global-rules-1.md (optional)
+│   │   │   └── README.md (optional)
+│   │   └── global-rules-2/
+│   │       ├── global-rules-2.md (optional)
+│   │       └── README.md (optional)
 │   └── Workspace-AI-rules/
-│       ├── .windsurfrules (optional)
-│       └── your-prompt-2.md (optional)
+│       ├── workspace-rules-1/
+│       │   ├── .windsurfrules (optional)
+│       │   └── README.md (optional)
+│       └── workspace-rules-2/
+│           ├── your-prompt-2.md (optional)
+│           └── README.md (optional)
 ├── another-username/
 │   ├── README.md (required)
 │   ├── Global-AI-rules/
-│   │   ├── global-rules-1.md (optional)
-│   │   └── global-rules-2.md (optional)
+│   │   ├── global-rules-1/
+│   │   │   ├── global-rules-1.md (optional)
+│   │   │   └── README.md (optional)
+│   │   └── global-rules-2/
+│   │       ├── global-rules-2.md (optional)
+│   │       └── README.md (optional)
 │   └── Workspace-AI-rules/
-│       ├── .windsurfrules (optional)
-│       └── their-prompt-2.md (optional)
+│       ├── workspace-rules-1/
+│       │   ├── .windsurfrules (optional)
+│       │   └── README.md (optional)
+│       └── workspace-rule-2/
+│           ├── their-prompt-2.md (optional)
+│           └── README.md (optional)
 └── README.md (what you're reading now)
 ```
 
