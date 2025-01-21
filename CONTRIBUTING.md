@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to Awesome Windsurf! We welcome all contributions, big or small:
 
-- Found a typo? Please fix it!
+- Found a typo? Please fix it! (Though this shouldn't be possible because of [CHECKS.md](CHECKS.md))
 - Have an idea for improvement? Open an issue!
 - Want to add your prompts? We'd love to see them!
 - Something unclear? Help us improve the docs!
