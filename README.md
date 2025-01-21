@@ -13,7 +13,7 @@
 [windsurf-link]: https://www.codeium.com/windsurf
 [discord-shield]: https://img.shields.io/discord/1027685395649015980?logo=discord&logoColor=white&label=Join%20us%20on%20Discord&labelColor=E55882&color=58E5BB
 [discord-link]: https://discord.gg/3XFf78nAx5
-[actions-shield]: https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg
+[actions-shield]: https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg?branch=main
 [actions-link]: https://github.com/ichoosetoaccept/awesome-windsurf/actions
 [prs-shield]: https://img.shields.io/badge/PRs-welcome-E55882.svg
 [contributing-link]: CONTRIBUTING.md
