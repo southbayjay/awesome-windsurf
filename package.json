@@ -8,48 +8,34 @@
     "@kie/act-js": "^2.6.2",
     "cspell": "^8.17.2",
     "eslint": "^9.18.0",
+    "eslint-config-prettier": "^9.0.0",
     "husky": "^9.1.7",
-    "jsonlint": "^1.6.3",
     "lint-staged": "^15.4.1",
     "markdown-link-check": "^3.13.6",
     "markdownlint-cli2": "^0.17.2",
     "prettier": "^3.1.1",
-    "remark-cli": "^12.0.1",
-    "remark-lint-fenced-code-flag": "^4.0.0",
-    "shellcheck": "^3.0.0",
-    "yaml-lint": "^1.7.0"
+    "shellcheck": "^3.0.0"
   },
   "scripts": {
     "postinstall": "husky",
+    "format": "prettier --write \"**/*.{js,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md,yml,yaml}\"",
     "check-links": "find . -name '*.md' -not -path './node_modules/*' -print0 | xargs -0 -n1 npx markdown-link-check --verbose -c .markdown-link-check.json",
     "fix:md": "markdownlint-cli2 --fix \"**/*.md\"",
     "spell-check": "cspell \"**/*.md\"",
-    "check-codeblocks": "remark . --quiet --frail",
-    "lint:js": "eslint --ext .js .",
-    "lint:json": "find . -name '*.json' -not -path './node_modules/*' -exec jsonlint -q {} \\;",
-    "lint:yaml": "find . -regex '.*\\.ya?ml$' -not -path './node_modules/*' -exec yamllint {} \\;",
+    "lint:js": "eslint .",
     "lint:shell": "find .husky -type f -not -path '*/_*' -exec shellcheck {} \\;",
-    "lint:all": "npm run lint:js && npm run lint:json && npm run lint:yaml && npm run lint:shell && npm run fix:md && npm run spell-check && npm run check-codeblocks",
+    "lint:all": "npm run format:check && npm run lint:js && npm run lint:shell && npm run fix:md && npm run spell-check",
     "test:workflow": "cd .github/tests && ./test-workflow-wrapper.sh",
     "test:workflows": "for w in create-release-tag publish-release auto-label markdownlint link-check; do WORKFLOW=$w EVENT=manual-release npm run test:workflow || exit 1; done"
   },
   "lint-staged": {
+    "*": "prettier --write",
     "*.md": [
       "markdownlint-cli2",
-      "cspell",
-      "remark --quiet --frail"
+      "cspell"
     ],
-    "*.js": [
-      "eslint"
-    ],
-    "!(.windsurfrules)*.json": [
-      "jsonlint -q"
-    ],
-    "*.{yml,yaml}": [
-      "yamllint"
-    ],
-    ".husky/*": [
-      "shellcheck"
-    ]
+    "*.js": "eslint --fix",
+    ".husky/*": "shellcheck"
   }
 }
