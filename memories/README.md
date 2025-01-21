@@ -13,7 +13,7 @@ Read about this [here](https://docs.codeium.com/windsurf/cascade#memories).
 
 ## Directory Structure
 
-``` text
+```text
 memories/
 ├── your-username/
 │   ├── README.md (required)
