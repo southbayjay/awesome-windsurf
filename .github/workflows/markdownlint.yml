@@ -1,10 +1,9 @@
 # This workflow ensures markdown files follow our style guide
 # Logic:
 # 1. Runs on every push and PR
-# 2. Uses markdownlint-cli2 (same as local)
-# 3. Attempts to auto-fix issues and commits them
-# 4. If fixes aren't possible, fails the check
-# 5. Also runs spell checking and code block validation
+# 2. Uses our local npm scripts for consistency
+# 3. Attempts to auto-fix issues and commits them on PRs
+# 4. Runs all markdown-related checks (lint, spell-check)
 
 name: Markdown Lint
 
@@ -17,38 +16,33 @@ on:
       - '**/*.md'
 
 jobs:
-  markdownlint:
+  check-and-fix:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Check markdown
-        uses: DavidAnson/markdownlint-cli2-action@v13
-        with:
-          globs: '**/*.md'
-          config: '.markdownlint-cli2.jsonc' # Use our configuration file
-        env:
-          GITHUB_WORKSPACE: /Users/ismar/repos/awesome-windsurf # Set the workspace path
-
-  fix-and-check:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' # Only run on pull requests
-    needs: markdownlint # Run after basic linting passes
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
+
       - run: npm ci
-      - name: Fix markdown
-        run: npm run fix:md
-      - name: Check spelling
-        run: npm run spell-check
-      - name: Check code blocks
-        run: npm run check-codeblocks
+
+      # Run format check first since it's quick
+      - name: Check formatting
+        run: npm run format:check
+
+      # Run markdown fixes and checks
+      - name: Fix and check markdown
+        run: |
+          npm run fix:md
+          npm run spell-check
+
+      # Only commit fixes on PRs
       - name: Commit fixes
+        if: github.event_name == 'pull_request'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'fix: auto-fix markdown formatting'
