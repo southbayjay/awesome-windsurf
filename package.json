@@ -6,7 +6,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@kie/act-js": "^2.6.2",
-    "cspell": "^8.17.1",
+    "cspell": "^8.17.2",
     "eslint": "^9.18.0",
     "husky": "^9.1.7",
     "jsonlint": "^1.6.3",
