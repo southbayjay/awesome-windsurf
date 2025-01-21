@@ -15,7 +15,7 @@
 [discord-link]: https://discord.gg/3XFf78nAx5
 [actions-shield]: https://github.com/ichoosetoaccept/awesome-windsurf/actions/workflows/markdownlint.yml/badge.svg
 [actions-link]: https://github.com/ichoosetoaccept/awesome-windsurf/actions
-[prs-shield]: https://img.shields.io/badge/PRs-welcome-58E5BB.svg
+[prs-shield]: https://img.shields.io/badge/PRs-welcome-E55882.svg
 [contributing-link]: CONTRIBUTING.md
 [contributors-shield]: https://img.shields.io/github/contributors/ichoosetoaccept/awesome-windsurf?color=E55882
 [contributors-link]: https://github.com/ichoosetoaccept/awesome-windsurf/graphs/contributors
