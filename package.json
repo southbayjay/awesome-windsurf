@@ -1,13 +1,15 @@
 {
   "name": "awesome-windsurf",
   "description": "A curated hub of awesome Windsurf resources",
-  "version": "2024.12.10",
   "private": false,
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.0.0",
     "@eslint/js": "^9.0.0",
     "@kie/act-js": "^2.6.2",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
     "cspell": "^8.17.2",
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
@@ -17,6 +19,7 @@
     "markdown-link-check": "^3.13.6",
     "markdownlint-cli2": "^0.17.2",
     "prettier": "^3.1.1",
+    "semantic-release": "^24.0.1",
     "shellcheck": "^3.0.0"
   },
   "scripts": {

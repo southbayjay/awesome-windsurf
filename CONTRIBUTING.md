@@ -54,6 +54,7 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
    ```
 
    Example commit messages:
+
    - `git commit -m "add: add link to windsurf docs"`
    - `git commit -m "update: improve clarity of installation steps"`
    - `git commit -m "remove: remove old documentation"`
@@ -72,10 +73,12 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 ### Pull Request Requirements
 
 1. **PR Content**:
+
    - Write a clear title and description explaining your changes
    - Link to any related issues
 
 2. **Markdown Quality**: All markdown files must pass the markdownlint checks
+
    - This is automatically checked by GitHub Actions
    - It's also enforced by the pre-commit hook
    - You can run checks manually using `npx markdownlint-cli2 "**/*.md"`
@@ -87,12 +90,50 @@ Every contribution makes Windsurf better for everyone. Don't hesitate to:
 
 ## Release Process
 
-Our releases are managed through GitHub's native release system. PRs can only be merged to `main` through our merge queue when they are ready for release. This is enforced by requiring either:
+Our releases are managed automatically by [semantic-release](https://semantic-release.gitbook.io/semantic-release). This means:
 
-- The `version-bump` label (added automatically for significant changes), or
-- A commit message starting with `release:`
+1. **Version Numbers**: We follow [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH)
 
-Note: All version management and releases are handled entirely by GitHub Actions. This ensures consistency across all contributors.
+   - PATCH (e.g., 1.0.0 -> 1.0.1): Backwards-compatible bug fixes
+   - MINOR (e.g., 1.0.0 -> 1.1.0): New content/features, backwards-compatible
+   - MAJOR (e.g., 1.0.0 -> 2.0.0): Breaking changes
+
+2. **Commit Messages**: Your commit type determines the next version
+
+   - `fix: message` -> Patch release
+   - `feat: message` -> Minor release
+   - Any commit with `BREAKING CHANGE:` in its footer -> Major release
+
+   Examples:
+
+   ```bash
+   # Patch release (1.0.0 -> 1.0.1)
+   git commit -m "fix: correct typo in installation guide"
+
+   # Minor release (1.0.0 -> 1.1.0)
+   git commit -m "feat: add new section on windsurfing spots"
+
+   # Major release (1.0.0 -> 2.0.0)
+   git commit -m "feat: reorganize entire documentation structure
+
+   BREAKING CHANGE: All sections have been reorganized with a new structure"
+   ```
+
+3. **Release Process**:
+
+   - Merging to `main` triggers a release check
+   - Changes are analyzed automatically
+   - Release notes are generated from commit messages
+   - A new GitHub release is created with the appropriate version
+   - Git tags are created automatically
+
+4. **What Gets Released**:
+   - Documentation fixes -> Patch version
+   - New content/sections -> Minor version
+   - Major reorganizations -> Major version
+   - Purely technical changes (like workflow updates) -> No version change
+
+Note: All version management and releases are handled entirely by semantic-release through GitHub Actions. This ensures consistency across all contributors.
 
 ## Contributing Prompts
 
