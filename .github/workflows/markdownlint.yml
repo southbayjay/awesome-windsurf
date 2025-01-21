@@ -1,6 +1,6 @@
 # This workflow ensures markdown files follow our style guide
 # Logic:
-# 1. Runs on every push and PR
+# 1. Runs on every PR
 # 2. Uses our local npm scripts for consistency
 # 3. Attempts to auto-fix issues and commits them on PRs
 # 4. Runs all markdown-related checks (lint, spell-check)
@@ -8,9 +8,6 @@
 name: Markdown Lint
 
 on:
-  push:
-    paths:
-      - '**/*.md'
   pull_request:
     paths:
       - '**/*.md'
