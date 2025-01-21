@@ -95,13 +95,13 @@ Want to contribute? Create a directory with your username and add your prompts! 
 
 ## Known Issues
 
-| Issue | Description | Solution |
-|-------|-------------|----------|
-| Errors when using Claude Sonnet 3.5 | Check the status of Anthropic's API | Check <https://status.anthropic.com> |
-| Accept/Reject buttons become unresponsive | Chat has probably gotten too long | Reload window and start new chat |
-| Diff view does not work | Chat has probably gotten too long | Reload window and start new chat |
-| Rules files not being honored | Rules in configuration files don't appear to work | 1. Ensure rules files are under 6k chars<br>2. Total size of referenced files should not exceed 6k chars |
-| Allowed commands still prompting | Commands in allow list still require acceptance | Currently related to rules files size - see solution above |
+| Issue                                     | Description                                       | Solution                                                                                                 |
+| ----------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Errors when using Claude Sonnet 3.5       | Check the status of Anthropic's API               | Check <https://status.anthropic.com>                                                                     |
+| Accept/Reject buttons become unresponsive | Chat has probably gotten too long                 | Reload window and start new chat                                                                         |
+| Diff view does not work                   | Chat has probably gotten too long                 | Reload window and start new chat                                                                         |
+| Rules files not being honored             | Rules in configuration files don't appear to work | 1. Ensure rules files are under 6k chars<br>2. Total size of referenced files should not exceed 6k chars |
+| Allowed commands still prompting          | Commands in allow list still require acceptance   | Currently related to rules files size - see solution above                                               |
 
 ## Contributing
 

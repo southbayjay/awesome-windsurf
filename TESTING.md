@@ -45,6 +45,7 @@ We support local testing of GitHub Actions workflows using [`act`](https://githu
    ```
 
 2. Install GitHub CLI:
+
    - macOS: `brew install gh`
    - Other: See [GitHub CLI installation](https://github.com/cli/cli#installation)
 
@@ -137,6 +138,7 @@ If a workflow test fails:
 ### Advanced Debugging
 
 1. **Docker Issues**:
+
    - Error: "Cannot connect to the Docker daemon"
 
      ```bash
@@ -154,6 +156,7 @@ If a workflow test fails:
      ```
 
 2. **GitHub Token Issues**:
+
    - Error: "Resource not accessible by integration"
 
      ```bash
@@ -171,6 +174,7 @@ If a workflow test fails:
      ```
 
 3. **Workflow Input Issues**:
+
    - Error: "Input required and not supplied"
 
      ```bash
@@ -181,6 +185,7 @@ If a workflow test fails:
      ```
 
 4. **Event Payload Issues**:
+
    - Error: "No such repository"
 
      ```bash
@@ -191,6 +196,7 @@ If a workflow test fails:
      ```
 
 5. **Path and Permission Issues**:
+
    - Error: "Permission denied"
 
      ```bash
@@ -209,11 +215,13 @@ If a workflow test fails:
 ### Performance Tips
 
 1. **Faster Testing**:
+
    - Use `--no-cache` only when necessary
    - Keep Docker images up to date
    - Clean up old containers regularly
 
 2. **Resource Usage**:
+
    - Monitor Docker resource usage
    - Use `--rm` to auto-remove containers
    - Clean up temporary files
@@ -228,6 +236,7 @@ If a workflow test fails:
 Our workflow testing system uses a special setup mechanism that works differently in local testing versus GitHub Actions:
 
 1. **Setup Script**:
+
    - Created dynamically during local testing
    - Installs necessary dependencies (like GitHub CLI)
    - Sets up the test environment
@@ -244,6 +253,7 @@ Our workflow testing system uses a special setup mechanism that works differentl
    ```
 
    This pattern:
+
    - Runs setup only when `SETUP_SCRIPT` is set (local testing)
    - Safely skips in GitHub Actions (where `SETUP_SCRIPT` isn't set)
    - Validates script existence before execution
@@ -251,6 +261,7 @@ Our workflow testing system uses a special setup mechanism that works differentl
 
 3. **Setup Script Validation**:
    The setup script includes several safety checks:
+
    - Verifies `GITHUB_WORKSPACE` is set
    - Validates tool installations
    - Uses proper error handling
@@ -258,6 +269,7 @@ Our workflow testing system uses a special setup mechanism that works differentl
    - Cleans up temporary files
 
 4. **Workflow Inputs**:
+
    - Pass inputs using the `INPUTS` environment variable:
 
      ```bash
@@ -272,6 +284,7 @@ Our workflow testing system uses a special setup mechanism that works differentl
 
 5. **Debugging**:
    If the setup fails:
+
    - Check the setup script at `.github/tests/setup.sh`
    - Verify Docker is running: `docker info`
    - Check GitHub authentication: `gh auth status`
@@ -287,18 +300,21 @@ Our workflow testing system uses a special setup mechanism that works differentl
 ### Best Practices for Local Testing
 
 1. **Before Testing**:
+
    - Ensure Docker is running
    - Authenticate with GitHub (`gh auth login`)
    - Be in the correct directory
    - Have all dependencies installed
 
 2. **Writing Tests**:
+
    - Keep event files up to date
    - Use realistic test data
    - Test both success and failure cases
    - Document special requirements
 
 3. **Running Tests**:
+
    - Start with basic workflow test
    - Add inputs if needed
    - Check output carefully

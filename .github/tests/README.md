@@ -24,18 +24,22 @@ npm run test:workflow create-release-tag
 ### create-release-tag.yml
 
 1. Manual Release
+
    - Trigger: PR with commit message starting with "release:"
    - Expected: Version bump, PR comment, success status
 
 2. Automatic Release (Files Changed)
+
    - Trigger: PR with >5 files changed
    - Expected: Version bump, PR comment, pending status
 
 3. Automatic Release (Commits Count)
+
    - Trigger: PR with >10 commits since last release
    - Expected: Version bump, PR comment, pending status
 
 4. No Release Needed
+
    - Trigger: PR with minimal changes
    - Expected: No version bump, no PR comment
 

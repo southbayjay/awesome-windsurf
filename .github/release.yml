@@ -15,4 +15,4 @@ changelog:
         - meta
     - title: Other Changes
       labels:
-        - "*"
+        - '*'
