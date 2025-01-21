@@ -124,9 +124,13 @@ Join our community on [Discord](https://discord.gg/3XFf78nAx5) (badge above) or 
 
 ## Videos
 
+[![Windsurf Wave 2 Launch](https://img.youtube.com/vi/YBP5Fs2N0Mg/0.jpg)][wave2-launch]
+[![Web Search Best Practices](https://img.youtube.com/vi/moIySJ4d0UY/0.jpg)][web-search]
 [![Windsurf: The Enterprise AI IDE](https://img.youtube.com/vi/VcUl0vPJwxo/0.jpg)][video-link]
 
 [video-link]: https://www.youtube.com/watch?v=VcUl0vPJwxo
+[wave2-launch]: https://www.youtube.com/watch?v=YBP5Fs2N0Mg
+[web-search]: https://www.youtube.com/watch?v=moIySJ4d0UY&t=1s
 
 ## License
 
