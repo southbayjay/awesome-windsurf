@@ -11,15 +11,17 @@ on:
     - cron: '0 2 * * *' # Run nightly at 02:00
 
 jobs:
-  markdown-link-check:
+  check-links:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+
+      - uses: actions/setup-node@v4
         with:
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'yes'
-          config-file: '.markdown-link-check.json'
-          folder-path: '.'
-          max-retry-count: 3
-          retry-on: 429,500,502,503,504
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Check markdown links
+        run: npm run check-links
