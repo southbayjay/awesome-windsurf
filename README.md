@@ -34,37 +34,40 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 
 ## Contents
 
-- [Please Read](#please-read)
 - [Useful Links](#useful-links)
+- [FAQ](#faq)
+- [Community Resources](#community-resources)
 - [Community Prompts](#community-prompts)
-- [Known Issues](#known-issues)
 - [Tips and Tricks](#tips-and-tricks)
 - [Videos](#videos)
 - [Contributing](#contributing)
-- [FAQ](#faq)
 - [License](#license)
 
-## Please Read
+## Useful links
 
 **This is not an official Codeium repository.** For official documentation and support, please visit:
 
+- [Codeium Service Status](https://status.codeium.com/)
 - [Windsurf Documentation](https://docs.codeium.com/windsurf/getting-started)
 - [Codeium Support](https://codeium.com/support)
 - [Windsurf Feature Requests](https://codeium.canny.io/feature-requests)
 - [Codeium Changelog](https://codeium.com/changelog)
 - [Codeium Subreddit](https://www.reddit.com/r/Codeium/)
 
-## Useful Links
+## FAQ
 
-### Community Resources
+**What is Windsurf?**
+Windsurf is an AI-native code editor created by Codeium that integrates advanced AI capabilities directly into your development workflow. It's designed to enhance productivity through natural language interaction and intelligent code assistance.
+
+**How do I install Windsurf?**
+Visit the [official Windsurf documentation](https://docs.codeium.com/windsurf/getting-started) for detailed installation instructions and system requirements.
+
+**Where can I find community support and resources?**
+Join our community on [Discord](https://discord.gg/3XFf78nAx5) (badge above) or visit the [Codeium Subreddit](https://www.reddit.com/r/Codeium/) for discussions, support, and sharing resources with other Windsurf users.
+
+## Community Resources
 
 - [awesome-windsurfrules](https://github.com/SchneiderSam/awesome-windsurfrules) - A complementary collection of Windsurf rules and guidelines
-
-### MCP Servers
-
-- [Pulse](https://www.pulsemcp.com/)
-- [mcpservers.org](https://www.mcpservers.org/)
-- [mcpservers.ai](https://www.mcpservers.ai/)
 
 ## Community Prompts
 
@@ -93,16 +96,6 @@ Want to contribute? Create a directory with your username and add your prompts! 
 - Keep an eye on your **Problems** panel at the bottom.
 - Arguably, it's even more important to have very solid testing code in place when using AI coding tools.
 
-## Known Issues
-
-| Issue                                     | Description                                       | Solution                                                                                                 |
-| ----------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Errors when using Claude Sonnet 3.5       | Check the status of Anthropic's API               | Check <https://status.anthropic.com>                                                                     |
-| Accept/Reject buttons become unresponsive | Chat has probably gotten too long                 | Reload window and start new chat                                                                         |
-| Diff view does not work                   | Chat has probably gotten too long                 | Reload window and start new chat                                                                         |
-| Rules files not being honored             | Rules in configuration files don't appear to work | 1. Ensure rules files are under 6k chars<br>2. Total size of referenced files should not exceed 6k chars |
-| Allowed commands still prompting          | Commands in allow list still require acceptance   | Currently related to rules files size - see solution above                                               |
-
 ## Contributing
 
 We welcome all contributions! Please check out our [Contributing Guide](CONTRIBUTING.md) for guidelines about:
@@ -110,17 +103,6 @@ We welcome all contributions! Please check out our [Contributing Guide](CONTRIBU
 - How to submit changes
 - Our standards
 - Release process using GitHub Releases
-
-## FAQ
-
-**What is Windsurf?**
-Windsurf is an AI-native code editor created by Codeium that integrates advanced AI capabilities directly into your development workflow. It's designed to enhance productivity through natural language interaction and intelligent code assistance.
-
-**How do I install Windsurf?**
-Visit the [official Windsurf documentation](https://docs.codeium.com/windsurf/getting-started) for detailed installation instructions and system requirements.
-
-**Where can I find community support and resources?**
-Join our community on [Discord](https://discord.gg/3XFf78nAx5) (badge above) or visit the [Codeium Subreddit](https://www.reddit.com/r/Codeium/) for discussions, support, and sharing resources with other Windsurf users.
 
 ## Videos
 
