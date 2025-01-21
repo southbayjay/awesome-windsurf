@@ -17,17 +17,7 @@
     "RAII",
     "mcpservers"
   ],
-  "ignorePaths": [
-    "node_modules/**",
-    "package.json",
-    "package-lock.json"
-  ],
+  "ignorePaths": ["node_modules/**", "package.json", "package-lock.json"],
   "allowCompoundWords": true,
-  "dictionaries": [
-    "typescript",
-    "node",
-    "npm",
-    "html",
-    "markdown"
-  ]
+  "dictionaries": ["typescript", "node", "npm", "html", "markdown"]
 }

@@ -1,3 +1,5 @@
+# Commit Message Guidelines
+
 Write a short english commit message (maximum one sentence) for every change you make, and always format it in a code block. Use the following guidelines for consistent and descriptive commit messages:
 
 prefix: short description (maximum one sentence)

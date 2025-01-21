@@ -5,7 +5,7 @@ In this folder, I share some rules that I love to use for my Windsurf projects. 
 - `memories/SchneiderSam/Global-AI-rules`: These are the rules that will be applied to Cascade in all workspaces.
 - `memories/SchneiderSam/Workspace-AI-rules`: These are the rules that will be applied to Cascade in the current workspace.
 
-In each path, you'll find different rules tailored to enhance your experience and maintain consistency across projects. 
+In each path, you'll find different rules tailored to enhance your experience and maintain consistency across projects.
 
 Feel free to explore, have fun, and I am open to any suggestions you might have!
 
