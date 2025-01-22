@@ -59,6 +59,7 @@ A curated hub of resources, tips, and community-driven content for Windsurf - a 
 ### Community Resources
 
 - [awesome-windsurfrules](https://github.com/SchneiderSam/awesome-windsurfrules) - A complementary collection of Windsurf rules and guidelines
+- [windsurfrules by kinopeee](https://github.com/kinopeee/windsurfrules)
 
 ### MCP Servers
 

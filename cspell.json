@@ -15,7 +15,8 @@
     "ichoosetoaccept",
     "cdefecc",
     "RAII",
-    "mcpservers"
+    "mcpservers",
+    "kinopeee"
   ],
   "ignorePaths": ["node_modules/**", "package.json", "package-lock.json"],
   "allowCompoundWords": true,
